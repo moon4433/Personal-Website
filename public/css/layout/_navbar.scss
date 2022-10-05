@@ -1,0 +1,18 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/placeholders' as *;
+@use '../abstracts/variables' as *;
+
+.nav{
+  width: 100%;
+  height: 50px;
+  &__menu{
+    display: flex;
+    &-item{
+      list-style: none;
+      font-size: 20px;
+    }
+  }
+  &__link{
+
+  }
+}

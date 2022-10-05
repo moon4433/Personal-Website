@@ -1,0 +1,32 @@
+/* --- Generic 7-in-1 Architecture --- */
+
+// Abstracts
+@use 'abstracts/_mixins';
+@use 'abstracts/_placeholders';
+@use 'abstracts/_variables';
+
+// Base
+@use 'base/_normalize';
+@use 'base/_base';
+@use 'base/_typography';
+
+// Vendors
+@use 'vendors/_bootstrap';
+
+// Layout
+@use 'layout/_footer';
+@use 'layout/_header';
+@use 'layout/_navbar';
+
+// Components
+@use 'components/_alerts';
+@use 'components/_buttons';
+@use 'components/_dropdown';
+@use 'components/_form';
+@use 'components/_links';
+
+// Pages
+@use 'pages/_index';
+@use 'pages/_error';
+
+// Themes - no themes at the moment

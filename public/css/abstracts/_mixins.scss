@@ -1,0 +1,20 @@
+@mixin breakMax($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+@mixin breakMaxHeight($height) {
+  @media screen and (max-height: $height) {
+    @content;
+  }
+}
+@mixin breakMin($minWidth){
+  @media screen and (min-width: $minWidth) {
+    @content;
+  }
+}
+@mixin print(){
+  @media print{
+    @content;
+  }
+}

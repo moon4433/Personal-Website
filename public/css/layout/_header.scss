@@ -1,0 +1,73 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/placeholders' as *;
+@use '../abstracts/variables' as *;
+
+.header{
+  height: 48.81vw;
+  width: 100%;
+  max-height: 1080px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__animation{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: translate(0, -50%);
+    top: 50%;
+    position: absolute;
+    background-color: #000;
+  }
+  &__title-background{
+    z-index: 2;
+    position: absolute;
+    padding-top: 25px;
+    width: 35%;
+    border-radius: 6px;
+    text-align: center;
+  }
+  &__title{
+    color: #fff;
+  }
+  &__name{
+    color: #f00;
+  }
+  &__button{
+    border-width: 2px;
+    border-color: #fff;
+    background-color: rgba(0,0,0,0);
+    transition: border-color .5s, background-color .5s;
+    margin: 25px;
+  }
+  &__arrow{
+    font-weight: bolder;
+    font-size: 27px;
+    margin-left: 10px;
+    transition: transform .6s;
+    transform: rotate(0deg);
+    outline: none;
+    box-shadow: none;
+  }
+  &__button:hover{
+    border-color: #f00;
+    background-color: rgba(255,0,0,1);
+    transition: border-color .5s, background-color .5s;
+    outline: none;
+    box-shadow: none;
+  }
+  &__button:active:focus,
+  &__button:focus:active,
+  &__button:active,
+  &__button:focus{
+    border-color: #f00;
+    outline: none;
+    box-shadow: none;
+    background-color: rgba(255,0,0,1);
+    transition: border-color .5s, background-color .5s;
+  }
+  &__button:hover &__arrow{
+    transition: transform .6s;
+    transform: rotate(90deg);
+  }
+}
