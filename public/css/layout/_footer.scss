@@ -18,7 +18,7 @@
    display: flex;
    justify-content: space-evenly;
    &__tile{
-      display: block;
+      display: grid;
       height: 50px;
       width: 50px;
       background-color: #f5f5f5;
@@ -29,15 +29,17 @@
       font-size: 30px;
       border-radius: 100%;
       position: relative;
+      text-decoration: none;
+      &-container{
+         position: relative;
+         top: -50%;
+      }
       &:hover{
          background-color: #F05454;
          color: #121212;
-         & i{
+         & social__tile-container{
             
          }
-      }
-      & i{
-         
       }
    }
 }

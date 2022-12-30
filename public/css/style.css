@@ -11146,7 +11146,7 @@ textarea.form-control-lg {
   justify-content: space-evenly;
 }
 .social__tile {
-  display: block;
+  display: grid;
   height: 50px;
   width: 50px;
   background-color: #f5f5f5;
@@ -11157,6 +11157,11 @@ textarea.form-control-lg {
   font-size: 30px;
   border-radius: 100%;
   position: relative;
+  text-decoration: none;
+}
+.social__tile-container {
+  position: relative;
+  top: -50%;
 }
 .social__tile:hover {
   background-color: #F05454;
