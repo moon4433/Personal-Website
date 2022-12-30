@@ -3,6 +3,57 @@
 @use '../abstracts/variables' as *;
 
 .footer{
-   height: 250px;
+   height: 550px;
    background-color: #121212;
+   padding-top: 50px;
+   &__text{
+      color: #F5F5F5;
+      margin: 25px auto 0;
+      text-align: center;
+   }
 }
+
+.social{
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-evenly;
+   &__tile{
+      display: block;
+      height: 50px;
+      width: 50px;
+      background-color: #f5f5f5;
+      color: #121212;
+      overflow: hidden;
+      text-align: center;
+      line-height: 50px;
+      font-size: 30px;
+      border-radius: 100%;
+      position: relative;
+      &:hover{
+         background-color: #F05454;
+         color: #121212;
+         & i{
+            
+         }
+      }
+      & i{
+         
+      }
+   }
+}
+
+@keyframes iconMover {
+   0% {
+     top: 2;
+   }
+   50% {
+     top: 30px;
+     left: 20px;
+   }
+   50% {
+     top: 10px;
+   }
+   100% {
+     top: 0;
+   }
+ }
