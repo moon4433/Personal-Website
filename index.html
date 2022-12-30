@@ -13,11 +13,16 @@
     <meta name="keywords" content="Keegan R Johnson, keegan r johnson,Keegan Johnson,keegan johnson,Keegan,keegan,Johnson,johnson" />
     <meta name="robots" content="index, follow" />
 
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -27,7 +32,7 @@
           <h1 class="header__title">
             Hello, I'm <span class="header__name">Keegan Johnson</span>.
             <br />
-            I'm a Front End Web Developer.
+            I'm a Web Developer.
           </h1>
           <button type="button" class="btn btn-primary btn-lg header__button">
             View My Work
@@ -39,19 +44,71 @@
       <nav class="nav">
         <ul class="nav__menu">
           <li class="nav__menu-item">
-            HOME
+            <a class="nav__link --active" href="#">HOME</a>
           </li>
           <li class="nav__menu-item">
-            ABOUT
+            <a class="nav__link" href="#">ABOUT</a>
           </li>
           <li class="nav__menu-item">
-            PORTFOLIO
+            <a class="nav__link" href="#">PORTFOLIO</a>
           </li>
           <li class="nav__menu-item">
-            CONTACT
+            <a class="nav__link" href="#">CONTACT</a>
           </li>
         </ul>
       </nav>
+      <div class="about">
+        <h3 id="section-title">About</h3>
+        <div class="about__tiles">
+          <div class="tile">
+            <div class="tile__img-container">
+              <div class="tile__img">
+                <i class="fa-solid fa-book"></i>
+              </div>
+            </div>
+            <h5 class="tile__title">Student</h5>
+            <p class="tile__desc">
+              I am always trying to learn something new.
+            </p>
+          </div>
+          <div class="tile">
+            <div class="tile__img-container">
+              <div class="tile__img">
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+            </div>
+            <h5 class="tile__title">Helper</h5>
+            <p class="tile__desc">
+              I will do anything that is thrown my way.
+            </p>
+          </div>
+          <div class="tile">
+            <div class="tile__img-container">
+              <div class="tile__img">
+                <i class="fa-solid fa-gamepad"></i>
+              </div>
+            </div>
+            <h5 class="tile__title">Geek</h5>
+            <p class="tile__desc">
+              I enjoy all things tech and some gaming.
+            </p>
+          </div>
+        </div>
+        <div class="about__bio">
+          <div class="bio">
+            <img class="bio__img" src="img/me.png"/>
+            <h4 class="bio__title">Who's this fellow?</h4>
+            <p class="bio__desc">
+              I'm currently as a Web Designer at <a class="bio__desc-link" href="#">Andronaco Industries</a> in Kentwood, MI. I have a serious passion for web development. I am also learning about UI, UI effects, and user experience.
+            </p>
+            <a class="bio__link" href="#">Check out my resume!</a>
+            <a class="bio__link" href="#">Let's make something together!</a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio">
+        <h3 id="section-title">Portfolio</h3>
+      </div>
     </div>
 
 

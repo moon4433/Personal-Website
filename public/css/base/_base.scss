@@ -1,12 +1,23 @@
 @use '../abstracts/mixins' as *;
 @use '../abstracts/placeholders' as *;
 @use '../abstracts/variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /*
   Website Start
   - Base Selectors
   - Id's
   - Classes
+
+  Fonts
+    - font-family: 'Roboto', sans-serif;
+    - font-family: 'Roboto Slab', serif;
+
+  Colors
+    - white-ish gray - #F5F5F5 - rgb(245, 245, 245)
+    - salmon red - #F05454 - rgb(240, 84, 84)
+    - navy blue - #30475E - rgb(48, 71, 94)
+    - coal black - #121212 - rgb(18, 18, 18)
 */
 
 body{
@@ -14,5 +25,17 @@ body{
 }
 
 #website-wrapper{
-  background-color: #fff;
+  background-color: #F5F5F5;
+}
+
+#section-title{
+  font-size: 3rem;
+  font-family: 'Roboto Slab', serif;
+  text-decoration: underline;
+  color: #121212;
+  text-align: center;
+  text-underline-offset: 10px;
+  padding-top: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
 }

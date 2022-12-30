@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto Slab', serif;
   &__animation{
     width: 100%;
     height: 100%;
@@ -17,7 +18,7 @@
     transform: translate(0, -50%);
     top: 50%;
     position: absolute;
-    background-color: #000;
+    background-color: #121212;
   }
   &__title-background{
     z-index: 2;
@@ -28,17 +29,19 @@
     text-align: center;
   }
   &__title{
-    color: #fff;
+    color: #F5F5F5;
   }
   &__name{
-    color: #f00;
+    color: #F05454;
   }
   &__button{
     border-width: 2px;
-    border-color: #fff;
-    background-color: rgba(0,0,0,0);
+    border-color: #F5F5F5;
+    color: #F5F5F5;
+    background-color: rgba(18, 18, 18, 0);
     transition: border-color .5s, background-color .5s;
     margin: 25px;
+    font-family: 'Roboto', sans-serif;
   }
   &__arrow{
     font-weight: bolder;
@@ -50,8 +53,8 @@
     box-shadow: none;
   }
   &__button:hover{
-    border-color: #f00;
-    background-color: rgba(255,0,0,1);
+    border-color: #F05454;
+    background-color: rgba(240, 84, 84, 1);
     transition: border-color .5s, background-color .5s;
     outline: none;
     box-shadow: none;
@@ -60,10 +63,10 @@
   &__button:focus:active,
   &__button:active,
   &__button:focus{
-    border-color: #f00;
+    border-color: #F05454;
     outline: none;
     box-shadow: none;
-    background-color: rgba(255,0,0,1);
+    background-color: rgba(240, 84, 84, 1);
     transition: border-color .5s, background-color .5s;
   }
   &__button:hover &__arrow{

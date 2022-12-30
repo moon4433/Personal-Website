@@ -17,6 +17,8 @@
 @use 'layout/_footer';
 @use 'layout/_header';
 @use 'layout/_navbar';
+@use 'layout/about';
+@use 'layout/portfolio';
 
 // Components
 @use 'components/_alerts';
@@ -24,6 +26,8 @@
 @use 'components/_dropdown';
 @use 'components/_form';
 @use 'components/_links';
+@use 'components/bio';
+@use 'components/tile';
 
 // Pages
 @use 'pages/_index';
