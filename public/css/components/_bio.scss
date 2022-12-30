@@ -34,6 +34,9 @@
         font-size: 1.125rem;
         text-decoration: none;
         color: #F05454;
+        &:nth-of-type(1){
+            margin-bottom: 15px;
+        }
         &:hover{
             color: #30475E;
         }
