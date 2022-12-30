@@ -344,6 +344,9 @@ body {
   margin-bottom: 0;
   padding-bottom: 0.5rem;
 }
+#section-title.contact {
+  color: #F5F5F5;
+}
 
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
@@ -10086,6 +10089,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.footer {
+  height: 250px;
+  background-color: #121212;
+}
+
 .header {
   height: 48.81vw;
   width: 100%;
@@ -10203,6 +10211,11 @@ textarea.form-control-lg {
 .portfolio {
   background-color: #fff;
   height: 750px;
+}
+
+.contact {
+  height: 750px;
+  background-color: #30475E;
 }
 
 .alert-success,

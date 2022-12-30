@@ -17,8 +17,9 @@
 @use 'layout/_footer';
 @use 'layout/_header';
 @use 'layout/_navbar';
-@use 'layout/about';
-@use 'layout/portfolio';
+@use 'layout/_about';
+@use 'layout/_portfolio';
+@use 'layout/_contact';
 
 // Components
 @use 'components/_alerts';
