@@ -13,10 +13,13 @@
       font-family: 'Roboto', sans-serif;
    }
    &__form{
-      width: 40%;
+      width: 45%;
       margin: 25px auto 0;
       font-family: 'Roboto', sans-serif;
       color: #121212;
+      @include breakMax(1440px){
+         width: 75%;
+      }
       &-row{
          text-align: end;
       }
@@ -50,7 +53,7 @@
          font-family: 'Roboto', sans-serif;
          color: #F5F5F5;
          border-color: #F5F5F5;
-         border-width: 2px;
+         border-width: 3px;
          background-color: #30475E;
          border-style: solid;
          transition: background-color .5s, border-color .5s;

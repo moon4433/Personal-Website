@@ -23,12 +23,9 @@
 
 // Components
 @use 'components/_alerts';
-@use 'components/_buttons';
-@use 'components/_dropdown';
-@use 'components/_form';
-@use 'components/_links';
 @use 'components/bio';
 @use 'components/tile';
+@use 'components/experience';
 
 // Pages
 @use 'pages/_index';

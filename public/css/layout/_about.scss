@@ -7,11 +7,34 @@
     margin-bottom: 50px;
     &__tiles{
         display: flex;
+        flex-wrap: wrap;
+        width: 75%;
+        margin: 0 auto;
+        justify-content: space-between;
+        @include breakMax(425px){
+            justify-content: center;
+        }
+    }
+    &__flex-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         width: 75%;
         margin: 50px auto 0;
-        justify-content: space-evenly;
     }
-    &__bio{
-        margin: 50px auto 0;
+    &__bio-container{
+        margin: 0 auto 0;
+    }
+    &__experience-container{
+        width: 50%;
+        margin-left: 75px;
+        @include breakMax(1398px){
+            margin-left: 0;
+            margin-top: 25px;
+            width: 75%;
+        }
+        @include breakMax(425px){
+            width: 100%;
+        }
     }
 }

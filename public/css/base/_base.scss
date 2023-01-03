@@ -38,7 +38,15 @@ body{
   padding-top: 50px;
   margin-bottom: 0;
   padding-bottom: 0.5rem;
+  &:first-child{
+    padding-top: 60px;
+  }
   &.contact{
     color: #F5F5F5;
   }
+}
+
+canvas{
+  height: 100% !important;
+  width: 100% !important;
 }

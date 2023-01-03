@@ -26,7 +26,9 @@
 
   </head>
   <body>
+    <!-- Website Wrapper -->
     <div id="website-wrapper">
+      <!-- Website Header -->
       <div class="header">
         <div class="header__title-background">
           <h1 class="header__title">
@@ -39,8 +41,9 @@
             <i class="fa-solid fa-greater-than header__arrow"></i>
           </button>
         </div>
-        <canvas class="header__animation"></canvas>
+        <div id="header-canvas" class="header__animation"></div>
       </div>
+      <!-- Navigation Bar -->
       <nav class="nav">
         <ul class="nav__menu">
           <li class="nav__menu-item">
@@ -57,6 +60,7 @@
           </li>
         </ul>
       </nav>
+      <!-- About Section -->
       <div class="about">
         <h3 id="section-title">About</h3>
         <div class="about__tiles">
@@ -85,6 +89,17 @@
           <div class="tile">
             <div class="tile__img-container">
               <div class="tile__img">
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+            </div>
+            <h5 class="tile__title">Helper</h5>
+            <p class="tile__desc">
+              I will do anything that is thrown my way.
+            </p>
+          </div>
+          <div class="tile">
+            <div class="tile__img-container">
+              <div class="tile__img">
                 <i class="fa-solid fa-gamepad"></i>
               </div>
             </div>
@@ -94,21 +109,64 @@
             </p>
           </div>
         </div>
-        <div class="about__bio">
-          <div class="bio">
-            <img class="bio__img" src="img/me.png"/>
-            <h4 class="bio__title">Who's this fellow?</h4>
-            <p class="bio__desc">
-              I'm currently as a Web Designer at <a class="bio__desc-link" href="#">Andronaco Industries</a> in Kentwood, MI. I have a serious passion for web development. I am also learning about UI, UI effects, and user experience.
-            </p>
-            <a class="bio__link" href="#">Check out my resume!</a>
-            <a class="bio__link" href="#">Let's make something together!</a>
+        <div class="about__flex-container">
+          <div class="about__bio-container">
+            <div class="bio">
+              <div class="bio__img-container">
+                <div class="bio__img"></div>
+              </div>
+              <h4 class="bio__title">Who's this fellow?</h4>
+              <p class="bio__desc">
+                My name is Keegan Johnson. I'm currently working as a Web Designer at <a class="bio__desc-link" href="#">Andronaco Industries</a> in Kentwood, Michigan. I have a serious passion for web development. I am also learning about UI, UI effects, and user experience.
+              </p>
+              <a class="bio__link" href="#">Check out my resume!</a>
+              <a class="bio__link" href="#">Let's make something together!</a>
+            </div>
+          </div>
+          <div class="about__experience-container">
+            <div class="experience">
+              <div class="experience__row">
+                <div class="experience__title">HTML</div><div class="experience__percent-container"><div class="experience__percent ninety"></div><span class="experience__percent-number">90%</span></div>
+              </div>
+              <div class="experience__row">
+                <div class="experience__title">CSS</div><div class="experience__percent-container"><div class="experience__percent ninety"></div><span class="experience__percent-number">90%</span></div>
+              </div>
+              <div class="experience__row">
+                <div class="experience__title">Javascript</div><div class="experience__percent-container"><div class="experience__percent eighty-five"></div><span class="experience__percent-number">85%</span></div>
+              </div>
+              <div class="experience__row">
+                <div class="experience__title">JQuery</div><div class="experience__percent-container"><div class="experience__percent eighty-five"></div><span class="experience__percent-number">85%</span></div>
+              </div>
+              <div class="experience__row">
+                <div class="experience__title">UI Design</div><div class="experience__percent-container"><div class="experience__percent seventy-five"></div><span class="experience__percent-number">75%</span></div>
+              </div>
+              <div class="experience__row">
+                <div class="experience__title">Photoshop</div><div class="experience__percent-container"><div class="experience__percent seventy-five"></div><span class="experience__percent-number">75%</span></div>
+              </div>
+              <div class="experience__row">
+                <div class="experience__title">Illustrator</div><div class="experience__percent-container"><div class="experience__percent seventy-five"></div><span class="experience__percent-number">75%</span></div>
+              </div>
+              <div class="experience__row">
+                <div class="experience__title">Sass</div><div class="experience__percent-container"><div class="experience__percent sixty-five"></div><span class="experience__percent-number">65%</span></div>
+              </div>
+              <div class="experience__row">
+                <div class="experience__title">PHP</div><div class="experience__percent-container"><div class="experience__percent fifty-five"></div><span class="experience__percent-number">55%</span></div>
+              </div>
+              <div class="experience__row">
+                <div class="experience__title">Node.js</div><div class="experience__percent-container"><div class="experience__percent twenty-five"></div><span class="experience__percent-number">25%</span></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <!-- Portfolio Section -->
       <div class="portfolio">
         <h3 id="section-title">Portfolio</h3>
+        <div class="portfolio__work-container">
+
+        </div>
       </div>
+      <!-- Contact Section -->
       <div class="contact">
         <h3 id="section-title" class="contact">Contact</h3>
         <p class="contact__text">
@@ -129,7 +187,13 @@
           </div>
         </form>
       </div>
+      <!-- Website Footer -->
       <div class="footer">
+        <a class="footer__back-to-top" href="#">
+          <i class="fa-solid fa-chevron-up"></i>
+          <br/>
+          <i class="fa-solid fa-chevron-up"></i>
+        </a>
         <div class="social">
           <a class="social__tile">
             <div class="social__tile-container">
@@ -162,12 +226,14 @@
             </div>
           </a>
         </div>
-        <h6 class="footer__text">Keegan Johnson • <script>document.write(new Date().getFullYear())</script></h6>
+        <h6 class="footer__text">Keegan R Johnson  <span class="footer__copywrite">©<script>document.write(new Date().getFullYear())</script></span></h6>
       </div>
+
     </div>
 
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/controls.js"></script>
+    <script type="text/javascript" src="js/p5.min.js"></script>
+    <script type="text/javascript" src="js/portfilio.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
   </body>
 </html>

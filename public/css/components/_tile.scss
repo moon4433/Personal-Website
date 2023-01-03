@@ -5,42 +5,27 @@
 .tile{
     padding-top: 25px;
     text-align: center;
+    width: 25%;
+    @include breakMax(1398px){
+        width: 35%;
+    }
+    @include breakMax(425px){
+        width: 85%;
+    }
     &__img{
         margin-top: 30px;
-        width: 150px;
-        height: 100px;
+        width: 125px;
+        height: 125px;
         background-color: #F05454;
-        border-color: #F05454;
-        position: relative;
-        display: inline-block;
-        &:before {
-            content: " ";
-            width: 0; height: 0;
-            border-bottom: 30px solid;
-            border-color: inherit;
-            border-left: 75px solid transparent;
-            border-right: 75px solid transparent;
-            position: absolute;
-            top: -30px;
-            left: 0px;
-        }
-        &:after {
-            content: "";
-            width: 0;
-            position: absolute;
-            bottom: -30px;
-            border-top: 30px solid;
-            border-color: inherit;
-            border-left: 75px solid transparent;
-            border-right: 75px solid transparent;
-            left: 0px;
-        }
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+        font-size: 4rem;
+        line-height: 115px;
+        border: 5px solid #121212;
+        color: #121212;
         &-container{
-            height: 185px;
-        }
-        & i{
-            font-size: 4.5rem;
-            line-height: 100px;
+            margin-bottom: 10px;
         }
     }
     &__title{

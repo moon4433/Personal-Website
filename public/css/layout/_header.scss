@@ -24,7 +24,7 @@
     z-index: 2;
     position: absolute;
     padding-top: 25px;
-    width: 35%;
+    width: 100%;
     border-radius: 6px;
     text-align: center;
   }
@@ -35,7 +35,7 @@
     color: #F05454;
   }
   &__button{
-    border-width: 2px;
+    border-width: 3px;
     border-color: #F5F5F5;
     color: #F5F5F5;
     background-color: rgba(18, 18, 18, 0);
@@ -47,7 +47,7 @@
     font-weight: bolder;
     font-size: 18px;
     margin-left: 10px;
-    transition: transform .6s;
+    transition: transform .25s;
     transform: rotate(0deg);
     outline: none;
     box-shadow: none;
@@ -70,7 +70,7 @@
     transition: border-color .5s, background-color .5s;
   }
   &__button:hover &__arrow{
-    transition: transform .6s;
+    transition: transform .25s;
     transform: rotate(90deg);
   }
 }

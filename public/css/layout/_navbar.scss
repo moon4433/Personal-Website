@@ -9,14 +9,22 @@
   background-color: #30475E;
   &__menu{
     display: flex;
-    width: 50%;
-    justify-content: space-evenly;
+    width: 35%;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
+    padding-left: 0;
+    margin-left: 12.5%;
     &-item{
       list-style: none;
       font-size: 24px;
       letter-spacing: 1px;
+    }
+    @include breakMax(1440px){
+      width: 50%;
+    }
+    @include breakMax(768px){
+      display: none;
     }
   }
   &__link{
