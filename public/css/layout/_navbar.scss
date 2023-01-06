@@ -4,9 +4,9 @@
 
 .nav{
   width: 100%;
-  height: 75px;
   font-family: 'Roboto', sans-serif;
   background-color: #30475E;
+  transition: top 1s;
   &__menu{
     display: flex;
     width: 35%;
@@ -19,6 +19,7 @@
       list-style: none;
       font-size: 24px;
       letter-spacing: 1px;
+      line-height: 75px;
     }
     @include breakMax(1440px){
       width: 50%;
@@ -31,6 +32,7 @@
     color: #F5F5F5;
     font-weight: 700;
     text-decoration: none;
+    display: block;
     &.--active{
       color: #F05454;
     }
@@ -38,4 +40,15 @@
       color: #F05454;
     }
   }
+}
+#sticky.nav{
+  position: fixed;
+  z-index: 10;
+  top: -75px;
+  visibility: collapse;
+  transition: top .4s;
+}
+#sticky.nav.active{
+  top: 0px;
+  visibility: visible;
 }

@@ -36,32 +36,48 @@
             <br />
             I'm a Web Developer.
           </h1>
-          <button type="button" class="btn btn-primary btn-lg header__button">
+          <a href="#about" class="btn btn-primary btn-lg header__button">
             View My Work
             <i class="fa-solid fa-greater-than header__arrow"></i>
-          </button>
+          </a>
         </div>
         <div id="header-canvas" class="header__animation"></div>
       </div>
       <!-- Navigation Bar -->
-      <nav class="nav">
+      <nav id="non-sticky" class="nav">
         <ul class="nav__menu">
           <li class="nav__menu-item">
             <a class="nav__link --active" href="#">HOME</a>
           </li>
           <li class="nav__menu-item">
-            <a class="nav__link" href="#">ABOUT</a>
+            <a class="nav__link" href="#about">ABOUT</a>
           </li>
           <li class="nav__menu-item">
-            <a class="nav__link" href="#">PORTFOLIO</a>
+            <a class="nav__link" href="#portfolio">PORTFOLIO</a>
           </li>
           <li class="nav__menu-item">
-            <a class="nav__link" href="#">CONTACT</a>
+            <a class="nav__link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <nav id="sticky" class="nav">
+        <ul class="nav__menu">
+          <li class="nav__menu-item">
+            <a class="nav__link --active" href="#">HOME</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__link" href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__link" href="#contact">CONTACT</a>
           </li>
         </ul>
       </nav>
       <!-- About Section -->
-      <div class="about">
+      <div id="about" class="about">
         <h3 id="section-title">About</h3>
         <div class="about__tiles">
           <div class="tile">
@@ -89,12 +105,12 @@
           <div class="tile">
             <div class="tile__img-container">
               <div class="tile__img">
-                <i class="fa-solid fa-circle-info"></i>
+                <i class="fa-solid fa-circle-question"></i>
               </div>
             </div>
-            <h5 class="tile__title">Helper</h5>
+            <h5 class="tile__title">Problem Solver</h5>
             <p class="tile__desc">
-              I will do anything that is thrown my way.
+              I don't back down to any challenge thrown my way.
             </p>
           </div>
           <div class="tile">
@@ -160,14 +176,29 @@
         </div>
       </div>
       <!-- Portfolio Section -->
-      <div class="portfolio">
+      <div id="portfolio" class="portfolio">
         <h3 id="section-title">Portfolio</h3>
         <div class="portfolio__work-container">
-
+          <ul class="portfolio__menu">
+            <li class="portfolio__menu-item"><a class="portfolio__link">HTML/CSS</a></li>
+            <li class="portfolio__menu-item"><a class="portfolio__link">Javascript</a></li>
+            <li class="portfolio__menu-item"><a class="portfolio__link">Node</a></li>
+            <li class="portfolio__menu-item"><a class="portfolio__link">PHP</a></li>
+          </ul>
+          <div class="portfolio__flex-container">
+            <div class="test-container"></div>
+            <div class="test-container"></div>
+            <div class="test-container"></div>
+            <div class="test-container"></div>
+            <div class="test-container"></div>
+            <div class="test-container"></div>
+            <div class="test-container"></div>
+          </div>
         </div>
       </div>
       <!-- Contact Section -->
-      <div class="contact">
+      <div id="contact" class="contact">
+        <div class="contact__top"></div>
         <h3 id="section-title" class="contact">Contact</h3>
         <p class="contact__text">
           Have a question or want to work together?
@@ -233,7 +264,8 @@
 
 
     <script type="text/javascript" src="js/p5.min.js"></script>
-    <script type="text/javascript" src="js/portfilio.js"></script>
     <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/portfolio.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
