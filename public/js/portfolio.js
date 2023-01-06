@@ -1,11 +1,15 @@
 let highlight = document.getElementById('highlighter');
 let menuOptions = document.querySelectorAll('#portfolio-menu .portfolio__menu-item');
 
-
-
-
-
-
+window.addEventListener('resize', ()=>{
+    menuOptions.forEach((item) => {
+        if(item.classList.contains('active')){
+            highlight.style.left = item.offsetLeft + 'px';
+            highlight.style.width = item.offsetWidth + 'px';
+            highlight.style.height = item.offsetHeight + 'px';
+        }
+    });
+});
 
 menuOptions.forEach((option) => {
     if(option.classList.contains('active')){
@@ -28,16 +32,6 @@ menuOptions.forEach((option) => {
                 highlight.style.height = item.offsetHeight + 'px';
             }
         });
-    });
-});
-
-window.addEventListener('resize', ()=>{
-    menuOptions.forEach((item) => {
-        if(item.classList.contains('active')){
-            highlight.style.left = item.offsetLeft + 'px';
-            highlight.style.width = item.offsetWidth + 'px';
-            highlight.style.height = item.offsetHeight + 'px';
-        }
     });
 });
 
