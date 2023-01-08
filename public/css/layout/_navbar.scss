@@ -21,6 +21,13 @@
       font-size: 24px;
       letter-spacing: 1px;
       line-height: 55px;
+      color: #F5F5F5;
+      &.--active{
+      color: #F05454;
+      }
+      &:hover{
+        color: #F05454;
+      }
     }
     @include breakMax(1440px){
       width: 50%;
@@ -30,15 +37,12 @@
     }
   }
   &__link{
-    color: #F5F5F5;
     font-weight: 700;
     text-decoration: none;
     display: block;
-    &.--active{
-      color: #F05454;
-    }
+    color: inherit;
     &:hover{
-      color: #F05454;
+      color: inherit;
     }
   }
 }

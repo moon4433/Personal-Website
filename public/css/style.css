@@ -10286,6 +10286,13 @@ textarea.form-control-lg {
   font-size: 24px;
   letter-spacing: 1px;
   line-height: 55px;
+  color: #F5F5F5;
+}
+.nav__menu-item.--active {
+  color: #F05454;
+}
+.nav__menu-item:hover {
+  color: #F05454;
 }
 @media screen and (max-width: 1440px) {
   .nav__menu {
@@ -10298,16 +10305,13 @@ textarea.form-control-lg {
   }
 }
 .nav__link {
-  color: #F5F5F5;
   font-weight: 700;
   text-decoration: none;
   display: block;
-}
-.nav__link.--active {
-  color: #F05454;
+  color: inherit;
 }
 .nav__link:hover {
-  color: #F05454;
+  color: inherit;
 }
 
 #sticky.nav {
