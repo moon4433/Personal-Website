@@ -1,0 +1,97 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/placeholders' as *;
+@use '../abstracts/variables' as *;
+
+.work{
+    height: 250px;
+    width: 25%;
+    overflow: hidden;
+    position: relative;
+    &:hover{
+       
+       & .work__overlay{
+          
+       }
+       
+    }
+    &__img{
+       width: auto;
+       height: 101%;
+       transform: translate(-50%, -50%);
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       z-index: 1;
+    }
+    &__overlay{
+       width: 100%;
+       height: 100%;
+       background-color: #fff;
+       position: relative;
+       z-index: 2;
+       opacity: 0%;
+       transition: opacity .25s;
+       text-align: center;
+       overflow: hidden;
+       &.hovered{
+            opacity: 100%;
+            transition: opacity .25s;
+            & .work__title.visible{
+                top: 0%;
+                transition: top .5s;
+             }
+             & .work__desc.visible{
+                top: 0%;
+                transition: top .5s;
+             }
+             & .work__button.visible{
+                top: 0%;
+                transition: top .5s, border-color .4s, background-color .4s, color .4s;
+             }
+       }
+    }
+    &__title{
+       padding: 50px 0 0;
+       position: relative;
+       margin-bottom: 0;
+       top: -100%;
+       transition: top .5s;
+       color: #121212;
+    }
+    &__desc{
+       position: relative;
+       margin-bottom: 0;
+       top: -100%;
+       transition: top .5s;
+       color: #F05454;
+    }
+    &__button{
+       margin-top: 50px;
+       position: relative;
+       top: 100%;
+       border-color: #30475E;
+       border-width: 3px;
+       background-color: transparent;
+       color: #30475E;
+       font-weight: 700;
+       letter-spacing: 1px;
+       font-size: 1.1rem;
+       transition: top .5s, border-color .4s, background-color .4s, color .4s;
+       outline: none;
+       &:focus,
+       &:active,
+       &:active:focus,
+       &:focus:active{
+            border-color: #F05454;
+            background-color: #F05454;
+            color: #121212;
+            outline: none;
+            box-shadow: none;
+       }
+       &:hover{
+          border-color: #F05454;
+          background-color: #F05454;
+          color: #121212;
+       }
+    }
+ }
