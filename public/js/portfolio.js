@@ -1,6 +1,7 @@
 let highlight = document.getElementById('highlighter');
 let menuOptions = document.querySelectorAll('#portfolio-menu .portfolio__menu-item');
 let workOptions = document.querySelectorAll('#portfolio-work-menu .work');
+let timeout = 0;
 
 window.addEventListener('resize', ()=>{
     menuOptions.forEach((item) => {
@@ -20,23 +21,52 @@ menuOptions.forEach((option) => {
     }
 
     option.addEventListener('mouseenter', (event)=>{
+        timeout = 1;
         highlight.style.left = option.offsetLeft + 'px';
         highlight.style.width = option.offsetWidth + 'px';
         highlight.style.height = option.offsetHeight + 'px';
     });
 
-    option.addEventListener('mouseleave', (event)=>{   
-        menuOptions.forEach((item) => {
-            if(item.classList.contains('active')){
-                highlight.style.left = item.offsetLeft + 'px';
-                highlight.style.width = item.offsetWidth + 'px';
-                highlight.style.height = item.offsetHeight + 'px';
+    option.addEventListener('mouseleave', (event)=>{ 
+        timeout = 0;
+        setTimeout(()=>{
+            if(timeout === 0){
+                menuOptions.forEach((item) => {
+                    if(item.classList.contains('active')){
+                        highlight.style.left = item.offsetLeft + 'px';
+                        highlight.style.width = item.offsetWidth + 'px';
+                        highlight.style.height = item.offsetHeight + 'px';
+                    }
+                });
             }
-        });
+        },500);
     });
 
     option.addEventListener('click',(event)=>{
-        
+        let currentShow = '';
+        menuOptions.forEach((selection)=>{
+            if(selection.classList.contains('active')){
+                selection.classList.remove('active');
+                if(event.target.parentNode.classList.contains('portfolio__menu-item')){
+                    event.target.parentNode.classList.add('active');
+                    currentShow = event.target.parentNode.id;
+                }
+            }
+        });
+        workOptions.forEach((selectedItems)=>{
+            if(currentShow === 'all'){ 
+                selectedItems.style.display = 'block'
+                setTimeout(()=>{
+                    selectedItems.style.scale = 100 + '%'; 
+                },100);
+            }
+            else if(!selectedItems.classList.contains(currentShow)){  
+                selectedItems.style.scale = 0 + '%';
+                setTimeout(()=>{
+                    selectedItems.style.display = 'none'; 
+                },1000);
+            }
+        });
     });
 });
 

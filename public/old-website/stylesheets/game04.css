@@ -1,0 +1,95 @@
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+
+body{
+    display: inline-block;
+    width: 100%;
+    background-color: #F1F2F2; 
+    font-family: "Open Sans";
+}
+
+section{
+    width: 100%;
+}
+
+#game4navbar {
+    background-color: #3B4750;
+    position: absolute;
+    width: 100%;
+    height: 7vh;
+    border-bottom: 5px solid #EF3B39;
+    
+}
+
+#game4nav{
+    display: flex;
+    font-family: "Open Sans";
+    position: relative;
+    left: 23vw;
+    top: 2.6vh;
+    width: 32vw;
+    height: 2vh;
+}
+
+#game4navitem{
+    font-size: 1vw;
+    font-weight: 400;
+    margin-right: 4vw;
+    text-decoration: none;
+    color: #F1F2F2;
+}
+
+#game4navitem:hover {
+    color: #EF3B39;
+}
+
+#game4footer{
+    height: 85px;
+    width: 100%;
+    background-color: #050505;
+    font-family: "Open Sans";
+    color: #F1F2F2;
+    font-size: .7vw;
+    text-align: center;
+    position: absolute;
+    bottom: -350px;
+}
+
+#game4p{
+    position: relative;
+    top: 50%;
+}
+
+canvas{
+    position: relative;
+    left: 30vw;
+    top: 100px;
+}
+#description {
+    position: relative;
+}
+
+#gameDescription {
+    position: relative;
+    border: 1px solid #000;
+    width: 15vw;
+    height: 6vh;
+    top: 43vw;
+    left: 42vw;
+    text-align: center;
+}
+
+#gdTitle {
+
+}
+
+#gdInfo {
+    line-height: 1.1;
+}
+
+#game4title{
+    position: relative;
+    font-size: 3vw;
+    font-weight: 600;
+    top: 8vw;
+    left: 40vw;
+}

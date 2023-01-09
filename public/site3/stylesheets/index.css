@@ -1,0 +1,315 @@
+.mainmenu{
+    float: right;
+    display: flex;
+}
+
+.logo{
+    height: 90px;
+    width: inherit;
+    margin-left: 115px;
+    margin-top: 13px;
+}
+
+.mainmenu-item{
+    padding: 15px 15px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.mainmenu-item #mainmenu-lastitem{
+    margin-right: 125px;
+}
+
+.mainmenu-link{
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 5px 13px;
+}
+
+.mainmenu-linkselect{
+    color: #cfd9d6;
+    text-decoration: none;
+    padding: 5px 13px;
+}
+
+.mainmenu-link:hover{
+    color: #cfd9d6;
+}
+
+section#bg01{
+    background-size: 1903px;
+    height: 1000px;
+}
+
+section#picheader{
+    background-color: #f2f2f2;
+    min-height: 304.16px;
+    width: 1903px;
+    height: 304.16px;
+    position: absolute;
+    display: block;
+    top: 800px;
+}
+
+section#pnb{
+    width: 1903px;
+    height: 1730.89px;
+    /*background-color: #f2f2f2;*/
+    position: absolute;
+    display: block;
+    top: 800px;
+}
+
+section#bg02{
+    background-size: 1903px;
+    height: 1100px;
+    z-index: -2;
+}
+
+section.otherinfo{
+    height: 1649.41px;
+    width: 1903px;
+    position: absolute;
+    top: 3150px;
+}
+
+
+
+#sociallinks{
+    font-size: 14pt;
+    font-weight: bold;
+    color: #cfd9d6;
+    margin: 75px 695px;
+    width: 500px;
+}
+
+#sociallink-clickable:hover{
+    color: #f2f2f2;
+}
+
+#sociallink-clickable{
+    font-weight: bold;
+    color: #cfd9d6;
+    text-decoration: none;
+    border-bottom: 1px solid #cfd9d6;
+    padding-bottom: 2px;
+}
+
+#dot{
+    font-weight: bold;
+    color: #cfd9d6;
+    
+}
+
+#boringstuffR{
+    font-weight: bold;
+    color: #cfd9d6;
+    text-decoration: none;
+    border-bottom: 1px solid #cfd9d6;
+    padding-bottom: 2px;
+    margin-left: 825.5px;
+}
+
+#boringstuffL{
+    font-weight: bold;
+    color: #cfd9d6;
+    text-decoration: none;
+    border-bottom: 1px solid #cfd9d6;
+    padding-bottom: 2px;
+}
+
+#boringstuffR:hover{
+    color: #f2f2f2;
+}
+
+#boringstuffL:hover{
+    color: #f2f2f2;
+}
+
+body{
+    margin: 0;
+    font-family: "Open Sans";
+}
+
+.header{
+    min-height: 121.06px;
+    background-color: #080a0a;
+    font-size: 16pt;
+    font-weight: bold;
+    width: 1903px;
+    z-index: 1;
+    position: absolute;
+    display: block;
+}
+
+section{
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+.footer{
+    height: 419px;
+    width: 1903px;
+    background-color: #212829;
+    position: absolute;
+    top: 4800px;
+}
+
+#picheading{
+    position: absolute;
+    width: 1703px;
+    z-index: 2;
+    margin: 0px 100px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-size: 45pt;
+    font-weight: 200;
+    text-align: center;
+    top: -150px
+}
+
+#picwords{
+    width: 1413.48px;
+    position: absolute;
+    top: 75px;
+    color: #080a0a;
+    z-index: 1;
+    line-height: 25px;
+    left: 275px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 19pt;
+}
+
+#pnbcontents{
+    height: 100px;
+}
+
+#pnbbiopic{
+    position: absolute;
+    left: 100px;
+    top: 390px;
+}
+
+#rightofpic{
+    position: absolute;
+    background-color: #cfd9d6;
+    height: 1241px;
+    width: 980px;
+    right: 90px;
+    top: 390px;
+}
+
+#pnbheading{
+    font-size: 22pt;
+    font-weight: 100;
+    position: absolute;
+    left: 25px;
+    top: 320px;
+    
+}
+
+#pnbbio{
+    position: absolute;
+    left: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    width: 900px;
+}
+
+#biobutton{
+    
+}
+
+#biobuttonbg{
+    position: absolute;
+    top: 800px;
+    left: 25px;
+    height: 43px;
+    width: 258px;
+    background-color: #212829;
+}
+
+#biobuttonbg:hover{
+    background-color: #3c4648;
+}
+
+#biobuttonwords{
+    text-decoration: none;
+    color: #cfd9d6;
+    font-weight: 400;
+    width: 198px;
+    font-size: 16pt;
+    padding: 10.5px 29.5px;
+}
+
+#moreinfosect{
+    height: 465px;
+    width: 971px;
+    background-color: #cfd9d6;
+}
+
+#sect01pic{
+    position: absolute;
+    height: 465px;
+    width: 700px;
+    left: 100px;
+}
+
+#sect02pic{
+    height: 465px;
+    width: 700px;
+    position: absolute;
+    right: 100px;
+    top: 585px;
+}
+
+#sect03pic{
+    height: 465px;
+    width: 700px;
+    position: absolute;
+    left: 100px;
+    top: 1085px;
+}
+
+#button{
+    
+}
+
+#buttonbg{
+    position: absolute;
+    top: 300px;
+    left: 45px;
+    height: 43px;
+    width: 258px;
+    background-color: #212829;
+}
+
+#buttonbg:hover{
+    background-color: #3c4648;
+}
+
+#buttonwords{
+    text-decoration: none;
+    text-align: center;
+    color: #cfd9d6;
+    font-weight: 400;
+    width: 198px;
+    font-size: 16pt;
+    padding: 10.5px 29.5px;
+}
+
+#mish{
+    font-size: 22pt;
+    font-weight: 700;
+    position: absolute;
+    left: 45px;
+    top: 115px;
+}
+
+#misp{
+    position: absolute;
+    left: 45px;
+    width: 880px;
+    line-height: 25px;
+}

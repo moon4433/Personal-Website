@@ -1,0 +1,51 @@
+body{
+    background-color: #080a0a;
+    height: 0px;
+    width: 1903px;
+}
+
+#wordssection{
+    color: #f2f2f2;
+    font-size: 14pt;
+    position: fixed;
+    left: 15%;
+    top: 20%;
+}
+
+#picturessection{
+    margin: 15px;
+    width: 700px;
+    position: fixed;
+    right: 15%;
+    top: 25%;
+}
+
+#img01{
+    height: 400px;
+    margin-left: 100px;
+}
+
+#img02{
+    height: 250px;
+}
+
+#name{
+    color: #f2f2f2;
+    font-size: 75pt;
+    position: fixed;
+    left: 15%;
+    top: 5%;
+}
+
+.personalinfo{
+    margin: 15px 0px;
+    position: relative;
+    
+}
+
+.personallink{
+    margin: 10px 0px;
+    position: relative;
+    text-decoration: none;
+    color: #ff122b;
+}

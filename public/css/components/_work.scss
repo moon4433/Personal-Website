@@ -7,13 +7,7 @@
     width: 25%;
     overflow: hidden;
     position: relative;
-    &:hover{
-       
-       & .work__overlay{
-          
-       }
-       
-    }
+    transition: scale 1s;
     &__img{
        width: auto;
        height: 101%;
