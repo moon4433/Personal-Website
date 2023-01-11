@@ -10724,7 +10724,7 @@ textarea.form-control-lg {
   width: 25%;
   overflow: hidden;
   position: relative;
-  transition: width 0.5s;
+  transition: width 0.8s;
 }
 .work__container {
   scale: 100%;
