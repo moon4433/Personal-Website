@@ -10394,7 +10394,7 @@ textarea.form-control-lg {
 .portfolio__menu #highlighter {
   position: absolute;
   background-color: #F05454;
-  transition: left 0.5s, width 0.5s;
+  transition: left 0.45s, width 0.45s;
   z-index: 1;
   left: 0;
   height: 100%;
@@ -10419,8 +10419,6 @@ textarea.form-control-lg {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: flex-start;
   overflow: hidden;
 }
 
@@ -10726,7 +10724,16 @@ textarea.form-control-lg {
   width: 25%;
   overflow: hidden;
   position: relative;
-  transition: scale 1s;
+  transition: width 0.5s;
+}
+.work__container {
+  scale: 100%;
+  transition: scale 0.5s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .work__img {
   width: auto;

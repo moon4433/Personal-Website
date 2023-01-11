@@ -7,7 +7,16 @@
     width: 25%;
     overflow: hidden;
     position: relative;
-    transition: scale 1s;
+    transition: width .8s;
+    &__container{
+      scale: 100%;
+      transition: scale .5s;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
     &__img{
        width: auto;
        height: 101%;

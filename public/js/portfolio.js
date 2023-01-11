@@ -57,14 +57,20 @@ menuOptions.forEach((option) => {
             if(currentShow === 'all'){ 
                 selectedItems.style.display = 'block'
                 setTimeout(()=>{
-                    selectedItems.style.scale = 100 + '%'; 
+                    selectedItems.style.width = 25 + '%';
+                    setTimeout(()=>{
+                        selectedItems.querySelector('.work__container').style.scale = 100 + '%';
+                    },800);
                 },100);
             }
-            else if(!selectedItems.classList.contains(currentShow)){  
-                selectedItems.style.scale = 0 + '%';
+            else if(!selectedItems.classList.contains(currentShow)){
+                selectedItems.querySelector('.work__container').style.scale = 0 + '%';
                 setTimeout(()=>{
-                    selectedItems.style.display = 'none'; 
-                },1000);
+                    selectedItems.style.width = 0 + '%';
+                    setTimeout(()=>{
+                        selectedItems.style.display = 'none'; 
+                    },800);
+                },500);
             }
         });
     });
