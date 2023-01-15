@@ -1,0 +1,8 @@
+1. Fix navbar for contact section
+2. Make page for games using views and partials
+3. Fix site examples to link to eachother
+4. Figure out php node issue
+5. Finish header
+6. Get form working
+7. Implament Animation
+8. Implament responsiveness

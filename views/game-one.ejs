@@ -1,0 +1,73 @@
+<%- include('partials/header') -%>
+    <nav id="non-sticky" class="nav">
+        <ul class="nav__menu">
+            <li id="home-static" class="nav__menu-item --active">
+                <a class="nav__link" href="/#">HOME</a>
+            </li>
+            <li id="about-static" class="nav__menu-item">
+                <a class="nav__link" href="/#about">ABOUT</a>
+            </li>
+            <li id="portfolio-static" class="nav__menu-item">
+                <a class="nav__link" href="/#portfolio">PORTFOLIO</a>
+            </li>
+            <li id="contact-static" class="nav__menu-item">
+                <a class="nav__link" href="/#contact">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="game-one">   
+        <h2 class="game-one__title" >Moon Survival</h2>
+
+        <div id="game-one" class="game-one__game"></div>
+
+
+        <div class="game-one__desc" >
+            <p class="game-one__desc-title">
+                How to Play
+            </p> 
+            <p class="game-one__desc-description">
+                <span>Collect the stars and avoid the asteroids!</span>
+                left Arrow - Left
+                <br>
+                Right Arrow - Right
+                <br>
+                Up Arrow - Jump
+
+            </p>
+        </div>
+    </section>
+    <div class="footer">
+      <div class="social">
+        <a class="social__tile" href="https://twitter.com/WTFguy13" target="_blank">
+          <div class="social__tile-container">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </a>
+        <a class="social__tile" href="https://www.linkedin.com/in/keeganjohnson43/" target="_blank">
+          <div class="social__tile-container">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </a>
+        <a class="social__tile" href="https://codepen.io/moon4433" target="_blank">
+          <div class="social__tile-container">
+            <i class="fa-brands fa-codepen"></i>
+            <i class="fa-brands fa-codepen"></i>
+          </div>
+        </a>
+        <a class="social__tile" href="https://github.com/moon4433" target="_blank">
+          <div class="social__tile-container">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </a>
+      </div>
+      <h6 class="footer__text">Keegan R Johnson  <span class="footer__copywrite">©<script>document.write(new Date().getFullYear())</script></span></h6>
+    </div>
+
+    <!-- Game One Scripts -->
+    <script src="js/phaser.js"></script>
+    <script src="js/game1.js"></script>
+
+<%- include('partials/footer') -%>

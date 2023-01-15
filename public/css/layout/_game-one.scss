@@ -1,0 +1,32 @@
+.game-one{
+    text-align: center;
+    background-color: #F5F5F5;
+    padding: 50px 0;
+    color: #121212;
+    &__title{
+        font-family: 'Roboto Slab', serif;
+        font-size: 3rem;
+    }
+    &__game canvas{
+        margin: 25px auto;
+    }
+    &__desc{
+        border: 1px solid #121212;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0 25px;
+        font-family: 'Roboto', sans-serif; 
+        &-title{
+            margin: 25px auto 5px;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        &-description{
+            margin-bottom: 25px;
+            & span{
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

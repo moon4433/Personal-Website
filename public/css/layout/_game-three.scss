@@ -1,0 +1,68 @@
+.game-three{
+    text-align: center;
+    background-color: #F5F5F5;
+    padding: 50px 0;
+    color: #121212;
+    &__title{
+        font-family: 'Roboto Slab', serif;
+        font-size: 3rem;
+    }
+    &__announcement{
+        &-text{
+            font-family: 'Roboto', sans-serif; 
+        }
+    }
+    &__container{
+        width: 650px;
+        height: fit-content;
+        margin: auto;
+        & #board {
+            background-color: yellow;
+            padding: 10px 20px;
+        }
+        
+        & .col {
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        
+        & .col.empty {
+            cursor: pointer;
+        }
+        
+        & .next-red {
+            background-color: rgba(255, 0, 0, 0.2);
+        }
+        
+        & .next-black {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        
+        & .col.red{
+            background-color: red;
+        }
+        
+        & .col.black{
+            background-color: black;
+        }
+    }
+    &__button{
+        margin-top: 15px;
+    }
+    &__desc{
+        border: 1px solid #121212;
+        width: fit-content;
+        margin: 15px auto 0;
+        padding: 15px;
+        font-family: 'Roboto', sans-serif; 
+        &-one{
+            margin-bottom: 15px;
+        }
+        &-two{
+            margin-bottom: 0;
+        }
+    }
+}

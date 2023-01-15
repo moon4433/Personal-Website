@@ -13,7 +13,7 @@ window.addEventListener('scroll', (event)=>{
     else if(window.scrollY <= mainNav.offsetTop){
         movingNav.classList.remove('active');
     }
-    if(window.scrollY < (aboutSection.offsetTop - 1) && window.scrollY < portfolioSection.offsetTop && window.scrollY < contactSection.offsetTop){
+    if(window.scrollY < (aboutSection.offsetTop - 1) && window.scrollY < (portfolioSection.offsetTop - 1) && window.scrollY < (contactSection.offsetTop - 1)){
         stickyMenu.forEach((stickyitem) => {
             if(stickyitem.classList.contains('--active')){
                 stickyitem.classList.remove('--active');
@@ -35,7 +35,7 @@ window.addEventListener('scroll', (event)=>{
             }
         });
     }
-    if(window.scrollY >= (aboutSection.offsetTop - 1) && window.scrollY < portfolioSection.offsetTop && window.scrollY < contactSection.offsetTop){
+    if(window.scrollY >= (aboutSection.offsetTop - 1) && window.scrollY < (portfolioSection.offsetTop - 1) && window.scrollY < (contactSection.offsetTop - 1)){
         stickyMenu.forEach((stickyitem) => {
             if(stickyitem.classList.contains('--active')){
                 stickyitem.classList.remove('--active');
@@ -57,7 +57,7 @@ window.addEventListener('scroll', (event)=>{
             }
         });
     }
-    if(window.scrollY > aboutSection.offsetTop && window.scrollY >= (portfolioSection.offsetTop - 1) && window.scrollY < contactSection.offsetTop){
+    if(window.scrollY > aboutSection.offsetTop && window.scrollY >= (portfolioSection.offsetTop - 1) && window.scrollY < (contactSection.offsetTop - 1)){
         stickyMenu.forEach((stickyitem) => {
             if(stickyitem.classList.contains('--active')){
                 stickyitem.classList.remove('--active');

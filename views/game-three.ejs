@@ -1,0 +1,80 @@
+<%- include('partials/header') -%>
+
+    <nav id="non-sticky" class="nav">
+        <ul class="nav__menu">
+            <li id="home-static" class="nav__menu-item --active">
+                <a class="nav__link" href="/">HOME</a>
+            </li>
+            <li id="about-static" class="nav__menu-item">
+                <a class="nav__link" href="/#about">ABOUT</a>
+            </li>
+            <li id="portfolio-static" class="nav__menu-item">
+                <a class="nav__link" href="/#portfolio">PORTFOLIO</a>
+            </li>
+            <li id="contact-static" class="nav__menu-item">
+                <a class="nav__link" href="/#contact">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="game-three">
+            
+        <h2 class="game-three__title">Connect Four</h2>
+        
+        <div class="game-three__announcement">
+            <h4 class="game-three__announcement-text">It's <span id="player">red</span>'s turn!</h4>
+        </div>
+        
+        <div class="game-three__container">
+            <div id="board"></div>
+        </div>
+        
+        
+        <button id="restart" class="game-three__button">Restart</button>
+        
+        <div class="game-three__desc">
+            <p class="game-three__desc-one">
+            Click on spaces to place piece in slot.
+            </p>
+            <p class="game-three__desc-two">       
+            Try to connect four of one color either
+            horizontally, vertically, or diagonally.
+            </p>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="social">
+            <a class="social__tile" href="https://twitter.com/WTFguy13" target="_blank">
+                <div class="social__tile-container">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </a>
+            <a class="social__tile" href="https://www.linkedin.com/in/keeganjohnson43/" target="_blank">
+                <div class="social__tile-container">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </a>
+            <a class="social__tile" href="https://codepen.io/moon4433" target="_blank">
+                <div class="social__tile-container">
+                    <i class="fa-brands fa-codepen"></i>
+                    <i class="fa-brands fa-codepen"></i>
+                </div>
+            </a>
+            <a class="social__tile" href="https://github.com/moon4433" target="_blank">
+                <div class="social__tile-container">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </a>
+        </div>
+        <h6 class="footer__text">Keegan R Johnson  <span class="footer__copywrite">©<script>document.write(new Date().getFullYear())</script></span></h6>
+    </div>
+
+    <!-- Javascript Files -->
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/game3.js"></script>
+
+<%- include('partials/footer') -%>

@@ -1,0 +1,330 @@
+<%- include('partials/header') -%>
+
+<!-- Website Wrapper -->
+<div id="website-wrapper">
+    <!-- Website Header -->
+    <div class="header">
+      <div class="header__title-background">
+        <h1 class="header__title">
+          Hello, I'm <span class="header__name">Keegan Johnson</span>.
+          <br />
+          I'm a Web Developer.
+        </h1>
+        <a href="#about" class="btn btn-primary btn-lg header__button">
+          View My Work
+          <i class="fa-solid fa-greater-than header__arrow"></i>
+        </a>
+      </div>
+      <div id="header-canvas" class="header__animation"></div>
+    </div>
+    <!-- Navigation Bar -->
+    <nav id="non-sticky" class="nav">
+      <ul class="nav__menu">
+        <li id="home-static" class="nav__menu-item --active">
+          <a class="nav__link" href="#">HOME</a>
+        </li>
+        <li id="about-static" class="nav__menu-item">
+          <a class="nav__link" href="#about">ABOUT</a>
+        </li>
+        <li id="portfolio-static" class="nav__menu-item">
+          <a class="nav__link" href="#portfolio">PORTFOLIO</a>
+        </li>
+        <li id="contact-static" class="nav__menu-item">
+          <a class="nav__link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+    <nav id="sticky" class="nav">
+      <ul class="nav__menu">
+        <li id="home-sticky" class="nav__menu-item --active">
+          <a class="nav__link" href="#">HOME</a>
+        </li>
+        <li id="about-sticky" class="nav__menu-item">
+          <a class="nav__link" href="#about">ABOUT</a>
+        </li>
+        <li id="portfolio-sticky" class="nav__menu-item">
+          <a class="nav__link" href="#portfolio">PORTFOLIO</a>
+        </li>
+        <li id="contact-sticky" class="nav__menu-item">
+          <a class="nav__link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- About Section -->
+    <div id="about" class="about">
+      <h3 id="section-title">About</h3>
+      <div class="about__tiles">
+        <div class="tile">
+          <div class="tile__img-container">
+            <div class="tile__img">
+              <i class="fa-solid fa-book"></i>
+            </div>
+          </div>
+          <h5 class="tile__title">Student</h5>
+          <p class="tile__desc">
+            I am always trying to learn something new.
+          </p>
+        </div>
+        <div class="tile">
+          <div class="tile__img-container">
+            <div class="tile__img">
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+          </div>
+          <h5 class="tile__title">Helper</h5>
+          <p class="tile__desc">
+            I will do anything that is thrown my way.
+          </p>
+        </div>
+        <div class="tile">
+          <div class="tile__img-container">
+            <div class="tile__img">
+              <i class="fa-solid fa-circle-question"></i>
+            </div>
+          </div>
+          <h5 class="tile__title">Problem Solver</h5>
+          <p class="tile__desc">
+            I don't back down to any challenge thrown my way.
+          </p>
+        </div>
+        <div class="tile">
+          <div class="tile__img-container">
+            <div class="tile__img">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+          </div>
+          <h5 class="tile__title">Geek</h5>
+          <p class="tile__desc">
+            I enjoy all things tech and some gaming.
+          </p>
+        </div>
+      </div>
+      <div class="about__flex-container">
+        <div class="about__bio-container">
+          <div class="bio">
+            <div class="bio__img-container">
+              <div class="bio__img"></div>
+            </div>
+            <h4 class="bio__title">Who's this fellow?</h4>
+            <p class="bio__desc">
+              My name is Keegan Johnson. I'm currently working as a Web Designer at <a class="bio__desc-link" href="https://www.andronaco.com/" target="_blank">Andronaco Industries</a> in Kentwood, Michigan. I have a serious passion for web development. I am also learning about UI, UI effects, and user experience.
+            </p>
+            <a class="bio__link" href="other/resume.pdf" target="_blank">Check out my resume!</a>
+            <a class="bio__link" href="#contact">Let's make something together!</a>
+          </div>
+        </div>
+        <div class="about__experience-container">
+          <div class="experience">
+            <div class="experience__row">
+              <div class="experience__title">HTML</div><div class="experience__percent-container"><div class="experience__percent ninety"></div><span class="experience__percent-number">90%</span></div>
+            </div>
+            <div class="experience__row">
+              <div class="experience__title">CSS</div><div class="experience__percent-container"><div class="experience__percent ninety"></div><span class="experience__percent-number">90%</span></div>
+            </div>
+            <div class="experience__row">
+              <div class="experience__title">Javascript</div><div class="experience__percent-container"><div class="experience__percent eighty-five"></div><span class="experience__percent-number">85%</span></div>
+            </div>
+            <div class="experience__row">
+              <div class="experience__title">JQuery</div><div class="experience__percent-container"><div class="experience__percent eighty-five"></div><span class="experience__percent-number">85%</span></div>
+            </div>
+            <div class="experience__row">
+              <div class="experience__title">UI Design</div><div class="experience__percent-container"><div class="experience__percent seventy-five"></div><span class="experience__percent-number">75%</span></div>
+            </div>
+            <div class="experience__row">
+              <div class="experience__title">Photoshop</div><div class="experience__percent-container"><div class="experience__percent seventy-five"></div><span class="experience__percent-number">75%</span></div>
+            </div>
+            <div class="experience__row">
+              <div class="experience__title">Illustrator</div><div class="experience__percent-container"><div class="experience__percent seventy-five"></div><span class="experience__percent-number">75%</span></div>
+            </div>
+            <div class="experience__row">
+              <div class="experience__title">Sass</div><div class="experience__percent-container"><div class="experience__percent sixty-five"></div><span class="experience__percent-number">65%</span></div>
+            </div>
+            <div class="experience__row">
+              <div class="experience__title">PHP</div><div class="experience__percent-container"><div class="experience__percent fifty-five"></div><span class="experience__percent-number">55%</span></div>
+            </div>
+            <div class="experience__row">
+              <div class="experience__title">Node.js</div><div class="experience__percent-container"><div class="experience__percent twenty-five"></div><span class="experience__percent-number">25%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="portfolio">
+      <h3 id="section-title">Portfolio</h3>
+      <div class="portfolio__work-container">
+        <ul id="portfolio-menu" class="portfolio__menu">
+          <span id="highlighter"></span>
+          <li id="all" class="portfolio__menu-item active"><a class="portfolio__link">All</a></li>
+          <li id="html" class="portfolio__menu-item"><a class="portfolio__link">HTML/CSS</a></li>
+          <li id="js" class="portfolio__menu-item"><a class="portfolio__link">Javascript</a></li>
+          <li id="node" class="portfolio__menu-item"><a class="portfolio__link">Node</a></li>
+          <li id="php" class="portfolio__menu-item"><a class="portfolio__link">PHP</a></li>
+        </ul>
+        <div id="portfolio-work-menu" class="portfolio__flex-container">
+          <div class="work html">
+            <div class="work__container">
+              <img class="work__img" src="img/work/work01.png" />
+              <div class="work__overlay">
+                <h4 class="work__title">School Project 1</h4>
+                <p class="work__desc">HTML/CSS</p>
+                <a href="site1/index.html" class="btn btn-primary work__button">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="work html">
+            <div class="work__container">
+              <img class="work__img" src="img/work/work02.png" />
+              <div class="work__overlay">
+                <h4 class="work__title">School Project 2</h4>
+                <p class="work__desc">HTML/CSS</p>
+                <a href="site2/index.html" class="btn btn-primary work__button">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="work js">
+            <div class="work__container">
+              <img class="work__img" src="img/work/work03.png" />
+              <div class="work__overlay">
+                <h4 class="work__title">School Project 3</h4>
+                <p class="work__desc">HTML/CSS/Javascript</p>
+                <a href="site3/index.html" class="btn btn-primary work__button">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="work js">
+            <div class="work__container">
+              <img class="work__img" src="img/work/work04.png" />
+              <div class="work__overlay">
+                <h4 class="work__title">Game 1</h4>
+                <p class="work__desc">HTML/CSS/Javascript/Phaser</p>
+                <a href="/game-one" class="btn btn-primary work__button">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="work js">
+            <div class="work__container">
+              <img class="work__img" src="img/work/work05.png" />
+              <div class="work__overlay">
+                <h4 class="work__title">Game 2</h4>
+                <p class="work__desc">HTML/CSS/Javascript</p>
+                <a href="/game-two" class="btn btn-primary work__button">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="work js">
+            <div class="work__container">
+              <img class="work__img" src="img/work/work06.png" />
+              <div class="work__overlay">
+                <h4 class="work__title">Game 3</h4>
+                <p class="work__desc">HTML/CSS/Javascript/jQuery</p>
+                <a href="/game-three" class="btn btn-primary work__button">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="work php">
+            <div class="work__container">
+              <img class="work__img" src="img/work/work07.png" />
+              <div class="work__overlay">
+                <h4 class="work__title">Previous Site</h4>
+                <p class="work__desc">HTML/CSS/Javascript/PHP</p>
+                <a href="#" class="btn btn-primary work__button">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="work node">
+            <div class="work__container">
+              <img class="work__img" src="img/work/work08.png" />
+              <div class="work__overlay">
+                <h4 class="work__title">Current Site</h4>
+                <p class="work__desc">HTML/CSS/Javascript/Node</p>
+                <a href="#" class="btn btn-primary work__button">
+                  To Top
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact" class="contact">
+      <div class="contact__top"></div>
+      <h3 id="section-title" class="contact">Contact</h3>
+      <p class="contact__text">
+        Have a question or want to work together?
+      </p>
+      <form id="contact-form" class="contact__form">
+        <div class="contact__form-row">
+          <input placeholder="Name" type="text" name="name" id="name" required>
+        </div>
+        <div class="contact__form-row">
+            <input placeholder="Enter Email" type="text" name="email" id="email" required>
+        </div>
+        <div class="contact__form-row">
+            <textarea placeholder="Your Message" name="message" id="message"></textarea>
+        </div>
+        <div class="contact__form-row">
+            <input type="submit" id="confirmbutton" value="Send Form">
+        </div>
+      </form>
+    </div>
+    <!-- Website Footer -->
+    <div class="footer">
+      <a class="footer__back-to-top" href="#">
+        <i class="fa-solid fa-chevron-up"></i>
+        <br/>
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+      <div class="social">
+        <a class="social__tile" href="https://twitter.com/WTFguy13" target="_blank">
+          <div class="social__tile-container">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </a>
+        <a class="social__tile" href="https://www.linkedin.com/in/keeganjohnson43/" target="_blank">
+          <div class="social__tile-container">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </a>
+        <a class="social__tile" href="https://codepen.io/moon4433" target="_blank">
+          <div class="social__tile-container">
+            <i class="fa-brands fa-codepen"></i>
+            <i class="fa-brands fa-codepen"></i>
+          </div>
+        </a>
+        <a class="social__tile" href="https://github.com/moon4433" target="_blank">
+          <div class="social__tile-container">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </a>
+      </div>
+      <h6 class="footer__text">Keegan R Johnson  <span class="footer__copywrite">©<script>document.write(new Date().getFullYear())</script></span></h6>
+    </div>
+
+  </div>
+
+    <!-- Home Javascript Files -->
+    <script type="text/javascript" src="js/p5.min.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/portfolio.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+  <%- include('partials/footer') -%>
