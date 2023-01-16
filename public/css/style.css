@@ -10740,7 +10740,9 @@ textarea.form-control-lg {
   font-family: "Roboto Slab", serif;
   font-size: 3rem;
 }
-.game-one__game canvas {
+.game-one__game {
+  width: 800px;
+  height: 600px;
   margin: 25px auto;
 }
 .game-one__desc {
