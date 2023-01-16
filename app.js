@@ -19,6 +19,30 @@ app.get('/', function(req, res) {
   res.render('home', {  });
 });
 
+app.get('/site-one', function(req, res) {
+  res.render('site-one', {  });
+});
+
+app.get('/site-two', function(req, res) {
+  res.render('site-two/home', {  });
+});
+
+app.get('/site-two/about', function(req, res) {
+  res.render('site-two/about', {  });
+});
+
+app.get('/site-two/other-work', function(req, res) {
+  res.render('site-two/other-work', {  });
+});
+
+app.get('/site-two/contact', function(req, res) {
+  res.render('site-two/contact', {  });
+});
+
+app.get('/site-three', function(req, res) {
+  res.render('site-three', {  });
+});
+
 app.get('/game-one', function(req, res) {
   res.render('game-one', {  });
 });

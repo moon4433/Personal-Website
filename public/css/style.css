@@ -10495,6 +10495,241 @@ textarea.form-control-lg {
   border-color: #F05454;
 }
 
+#site-one {
+  margin: 0;
+  font-family: "Open Sans";
+  background-color: #080a0a;
+  height: 0px;
+  width: 1903px;
+}
+
+#site-one #wordssection {
+  color: #f2f2f2;
+  font-size: 14pt;
+  position: fixed;
+  left: 15%;
+  top: 16%;
+}
+
+#site-one #picturessection {
+  margin: 15px;
+  width: 700px;
+  position: fixed;
+  right: 15%;
+  top: 25%;
+}
+
+#site-one #img01 {
+  height: 400px;
+  margin-left: 100px;
+}
+
+#site-one #img02 {
+  height: 250px;
+}
+
+#site-one #name {
+  color: #f2f2f2;
+  font-size: 75pt;
+  position: fixed;
+  left: 15%;
+  top: 3%;
+}
+
+#site-one .personalinfo {
+  margin: 15px 0px;
+  position: relative;
+}
+
+#site-one .personallink {
+  margin: 10px 0px;
+  position: relative;
+  text-decoration: none;
+  color: #ff122b;
+}
+
+#site-two {
+  margin: 0;
+  font-family: "Open Sans";
+  background-color: #f2f2f2;
+}
+
+#site-two .contentholder {
+  background-color: #f2f2f2;
+  width: 1304px;
+  border: 2px solid #cfd9d6;
+  margin: 80px auto;
+}
+
+#site-two #nametitle {
+  margin: 140px auto 0;
+  width: 100%;
+  text-align: center;
+}
+
+#site-two #title {
+  font-size: 32pt;
+  color: #080a0a;
+  text-decoration: none;
+}
+
+#site-two #divider {
+  height: 2px;
+  width: 1100px;
+  background-color: #cfd9d6;
+  margin: 75px 102px;
+}
+
+#site-two #whitespace {
+  height: 30px;
+  width: 759.14px;
+  background-color: #f2f2f2;
+  position: absolute;
+  top: 325px;
+  margin: 0px 273px;
+}
+
+#site-two #navbar {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: space-around;
+}
+
+#site-two #navitems {
+  margin: 0px auto;
+  text-decoration: none;
+  color: #cfd9d6;
+  font-weight: bold;
+  font-size: 17pt;
+}
+
+#site-two #navitems:hover {
+  text-decoration: none;
+  color: #080a0a;
+  font-weight: bold;
+  border-bottom: 2px solid #cfd9d6;
+}
+
+#site-two #profpic {
+  height: 250px;
+  margin: 15px 340px;
+}
+
+#site-two #aboutme {
+  width: 625px;
+  font-size: 13pt;
+  margin: 10px 340px;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+#site-two #socialstuff {
+  width: 1100px;
+  height: 72.67px;
+  margin: 50px 102px 0px;
+  border-top: 2px solid #cfd9d6;
+  border-bottom: 2px solid #cfd9d6;
+  margin-bottom: 100px;
+}
+
+#site-two #socialcontent {
+  display: flex;
+  padding-left: 150px;
+  height: 35px;
+  width: 0px;
+  right: 530px;
+  top: 1810px;
+  margin-left: 815px;
+  margin-top: 18px;
+  list-style: none;
+}
+
+#site-two #facebook {
+  height: 35px;
+  margin: 0px 2.5px;
+}
+
+#site-two #twitter {
+  height: 35px;
+  margin: 0px 2.5px;
+}
+
+#site-two #linkedin {
+  height: 35px;
+  margin: 0px 2.5px;
+}
+
+#site-two #aboutme2 {
+  width: 770px;
+  font-size: 13pt;
+  margin: 0px 267px;
+  margin-bottom: 10px;
+  margin-top: 150px;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+#site-two #aboutme3 {
+  width: 770px;
+  font-size: 13pt;
+  margin: 10px 267px;
+  line-height: 30px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#site-two #funnyface {
+  width: 320px;
+  float: left;
+  margin-bottom: 25px;
+  margin-right: 35px;
+}
+
+#site-two #tablesect {
+  margin: 100px 100px;
+}
+
+#site-two #otherworktable {
+  align-content: center;
+  margin: 10px auto;
+}
+
+#site-two #titlerow {
+  line-height: 45px;
+  border-bottom: 2px solid #cfd9d6;
+}
+
+#site-two #tabletitledata {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+#site-two #bp01 {
+  width: 300px;
+  margin: 25px 25px;
+}
+
+#site-two #bp02 {
+  width: 300px;
+  height: 146px;
+  margin: 25px 25px;
+}
+
+#site-two #bp03 {
+  width: 300px;
+  margin: 25px 25px;
+}
+
+#site-two #navitems.selected {
+  text-decoration: none;
+  color: #080a0a;
+  font-weight: bold;
+  font-size: 17pt;
+  border-bottom: 2px solid #cfd9d6;
+}
+
 .game-one {
   text-align: center;
   background-color: #F5F5F5;

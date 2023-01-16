@@ -1,0 +1,40 @@
+<footer>
+    <section id="socialstuff">
+            <ul id="socialcontent">
+               <li><a href="https://www.facebook.com/keegan.johnson.9849"><img src="../img/site2/facebookhover.png" class="socialstuff" id="facebook"></a></li>
+               <li><a href="https://www.linkedin.com/in/keeganjohnson43/"><img src="../img/site2/linkedhove.png" class="socialstuff" id="linkedin" data-state="linkedin"></a></li>
+               <li><a href="https://twitter.com/WTFguy13"><img src="../img/site2/twitterhover.png" class="socialstuff" id="twitter" data-state="twitter"></a></li>
+            </ul>
+    </section>
+</footer>
+</section>
+
+<script>
+
+    let collider = document.getElementById('socialcontent');        
+    let facebook = document.getElementById('facebook');
+    let linkedin = document.getElementById('linkedin');
+    let twitter = document.getElementById('twitter');
+    
+    collider.addEventListener("mouseover", function(e){
+        facebook.src = "../img/site2/facebooknohover.png";
+        linkedin.src = "../img/site2/linkednohover.png";
+        twitter.src = "../img/site2/twitternohover.png";
+    } );
+    collider.addEventListener("mouseleave", function(e){
+        facebook.src = "../img/site2/facebookhover.png";
+        linkedin.src = "../img/site2/linkedhove.png";
+        twitter.src = "../img/site2/twitterhover.png";
+    } );
+    facebook.addEventListener("mouseenter", function(e){
+        facebook.src = "../img/site2/facebookhover.png";
+    } );
+    linkedin.addEventListener("mouseenter", function(e){
+        linkedin.src = "../img/site2/linkedhove.png";
+    } );
+    twitter.addEventListener("mouseenter", function(e){
+        twitter.src = "../img/site2/twitterhover.png";
+    } );
+</script>
+</body>
+</html>

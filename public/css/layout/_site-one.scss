@@ -1,0 +1,53 @@
+#site-one{
+    margin: 0;
+    font-family: "Open Sans";
+    background-color: #080a0a;
+    height: 0px;
+    width: 1903px;
+}
+
+#site-one #wordssection{
+    color: #f2f2f2;
+    font-size: 14pt;
+    position: fixed;
+    left: 15%;
+    top: 16%;
+}
+
+#site-one #picturessection{
+    margin: 15px;
+    width: 700px;
+    position: fixed;
+    right: 15%;
+    top: 25%;
+}
+
+#site-one #img01{
+    height: 400px;
+    margin-left: 100px;
+}
+
+#site-one #img02{
+    height: 250px;
+}
+
+#site-one #name{
+    color: #f2f2f2;
+    font-size: 75pt;
+    position: fixed;
+    left: 15%;
+    top: 3%;
+}
+
+#site-one .personalinfo{
+    margin: 15px 0px;
+    position: relative;
+    
+}
+
+#site-one .personallink{
+    margin: 10px 0px;
+    position: relative;
+    text-decoration: none;
+    color: #ff122b;
+}
