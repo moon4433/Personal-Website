@@ -1,0 +1,43 @@
+<footer class="footer">
+    <p id="sociallinks">
+        Connect with me on <a href="https://www.linkedin.com/in/keeganjohnson43?trk=people-guest_people_search-card"
+            id="sociallink-clickable">LinkedIn</a> or follow me on <a href="https://twitter.com/WTFguy13"
+            id="sociallink-clickable">Twitter</a>
+    </p>
+    <p>
+        <a id="boringstuffR" href="termsofuse.html">Terms of Use</a> <a id="dot">•</a> <a id="boringstuffL"
+            href="privacypolicy.html">Privacy Policy</a>
+    </p>
+</footer>
+
+<script>
+
+    window.addEventListener('scroll', function (e) {
+
+        const target = document.querySelectorAll('.scroll');
+
+
+        var index = 0, length = target.length;
+        for (index; index < length; index++) {
+            var pos = window.pageYOffset * target[index].dataset.rate;
+
+
+
+            if (target[index].dataset.direction === 'vertical') {
+                if (pos >= 800) pos = 800;
+                target[index].style.transform = 'translate3d(0px,' + pos + 'px, 0px)';
+            }
+            if (target[index].dataset.direction === 'verticalN2') {
+                if (pos >= 2000) pos = 2000;
+                target[index].style.transform = 'translate3d(0px, ' + pos + 'px, 0px)';
+            }
+        }
+
+
+    });
+
+</script>
+
+</body>
+
+</html>

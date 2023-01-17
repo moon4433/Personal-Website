@@ -1,13 +1,21 @@
 1. Fix navbar for contact section
+
 1.5. add link to other pages in navbar for games
 2. Make page for sites using views and partials
+
 3. Fix site examples to link to eachother
+
 4. Figure out php node issue
+
 5. Finish header
+
 6. Get form working
+
 7. Implament Animation
 8. Implament responsiveness
+
 9. Add google analytics
 10. Check SEO stuff
+
 11. Make sure everything still works
 12. upload to website!

@@ -40,7 +40,7 @@ app.get('/site-two/contact', function(req, res) {
 });
 
 app.get('/site-three', function(req, res) {
-  res.render('site-three', {  });
+  res.render('site-three/home', {  });
 });
 
 app.get('/game-one', function(req, res) {
