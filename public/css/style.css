@@ -10733,6 +10733,12 @@ textarea.form-control-lg {
 #site-three .mainmenu {
   float: right;
   display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  height: 120px;
 }
 
 #site-three .logo {
@@ -10758,7 +10764,7 @@ textarea.form-control-lg {
   padding: 5px 13px;
 }
 
-#site-three .mainmenu-linkselect {
+#site-three .mainmenu-link.select {
   color: #cfd9d6;
   text-decoration: none;
   padding: 5px 13px;
@@ -10768,31 +10774,62 @@ textarea.form-control-lg {
   color: #cfd9d6;
 }
 
-#site-three section#bg01 {
-  background-size: 1903px;
-  height: 1000px;
+#site-three #bg01 {
+  background-size: 100%;
+  height: 800px;
+  position: relative;
+  z-index: 1;
 }
 
-#site-three section#picheader {
+#site-three #picheader {
   background-color: #f2f2f2;
   min-height: 304.16px;
-  width: 1903px;
-  height: 304.16px;
-  position: absolute;
+  width: 100%;
+  position: relative;
   display: block;
-  top: 800px;
+  z-index: 2;
+  height: fit-content;
 }
 
-#site-three section#pnb {
-  width: 1903px;
-  height: 1730.89px;
-  /*background-color: #f2f2f2;*/
-  position: absolute;
-  display: block;
-  top: 800px;
+#site-three #picheader.home {
+  padding-bottom: 115px;
 }
 
-#site-threesection#bg02 {
+#site-three #picheader.home {
+  display: inline-table;
+  padding-bottom: 115px;
+}
+
+#site-three #aboutheading {
+  width: 100%;
+  position: relative;
+  color: #080a0a;
+  z-index: 1;
+  text-align: center;
+  font-weight: 100;
+  font-size: 50pt;
+  padding-top: 75px;
+}
+
+#site-three #pnb {
+  width: 100%;
+  position: relative;
+  display: inline-table;
+  top: 0;
+  z-index: 1;
+  background-color: #f2f2f2;
+}
+
+#site-three #pnb.home {
+  padding-bottom: 125px;
+}
+
+#site-three #pnb.about {
+  padding-bottom: 100px;
+  margin-bottom: 0;
+}
+
+#site-threesection #bg02 {
   background-size: 1903px;
   height: 1100px;
   z-index: -2;
@@ -10800,17 +10837,16 @@ textarea.form-control-lg {
 
 #site-three section.otherinfo {
   height: 1649.41px;
-  width: 1903px;
-  position: absolute;
-  top: 3150px;
+  width: 100%;
 }
 
 #site-three #sociallinks {
-  font-size: 14pt;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #cfd9d6;
-  margin: 75px 695px;
-  width: 500px;
+  margin: 50px auto 75px;
+  width: 100%;
+  text-align: center;
 }
 
 #site-three #sociallink-clickable:hover {
@@ -10825,6 +10861,10 @@ textarea.form-control-lg {
   padding-bottom: 2px;
 }
 
+#site-three .footer p {
+  text-align: center;
+}
+
 #site-three #dot {
   font-weight: bold;
   color: #cfd9d6;
@@ -10836,7 +10876,6 @@ textarea.form-control-lg {
   text-decoration: none;
   border-bottom: 1px solid #cfd9d6;
   padding-bottom: 2px;
-  margin-left: 825.5px;
 }
 
 #site-three #boringstuffL {
@@ -10858,56 +10897,71 @@ textarea.form-control-lg {
 #site-three {
   margin: 0;
   font-family: "Open Sans";
+  position: relative;
 }
 
 #site-three .header {
   min-height: 121.06px;
   background-color: #080a0a;
-  font-size: 16pt;
   font-weight: bold;
-  width: 1903px;
-  z-index: 1;
+  width: 100%;
+  z-index: 2;
   position: absolute;
   display: block;
+  height: fit-content;
+}
+
+#site-three .header.contact {
+  position: relative;
+  padding: 0;
+}
+
+#site-three .header.gallery {
+  position: relative;
+  padding: 0;
 }
 
 #site-three section {
-  height: 100%;
+  height: 1200px;
   background-color: #f2f2f2;
+  position: relative;
+  z-index: 1;
+  background-size: 100%;
+}
+
+#site-three .image-spacer {
+  height: 680px;
+}
+
+#site-three section#bg02 {
+  position: absolute;
+  height: 1400px;
+  z-index: 0;
+  width: 100%;
 }
 
 #site-three .footer {
   height: 419px;
-  width: 1903px;
+  width: 100%;
   background-color: #212829;
-  position: absolute;
-  top: 4800px;
 }
 
 #site-three #picheading {
-  position: absolute;
-  width: 1703px;
-  z-index: 2;
-  margin: 0px 100px;
-  margin-top: 100px;
+  width: 100%;
+  padding-top: 100px;
   margin-bottom: 25px;
   font-size: 45pt;
   font-weight: 200;
   text-align: center;
-  top: -150px;
 }
 
 #site-three #picwords {
   width: 1413.48px;
-  position: absolute;
-  top: 75px;
   color: #080a0a;
-  z-index: 1;
-  line-height: 25px;
-  left: 275px;
   text-align: center;
   font-weight: 600;
-  font-size: 19pt;
+  font-size: 1.625rem;
+  margin: auto;
 }
 
 #site-three #pnbcontents {
@@ -10915,22 +10969,20 @@ textarea.form-control-lg {
 }
 
 #site-three #pnbbiopic {
-  position: absolute;
-  left: 100px;
-  top: 390px;
+  float: left;
+  margin-left: 100px;
 }
 
 #site-three #rightofpic {
-  position: absolute;
   background-color: #cfd9d6;
   height: 1241px;
-  width: 980px;
-  right: 90px;
-  top: 390px;
+  width: 55.5%;
+  float: right;
+  margin-right: 100px;
 }
 
 #site-three #pnbheading {
-  font-size: 22pt;
+  font-size: 2.1rem;
   font-weight: 100;
   position: absolute;
   left: 25px;
@@ -10941,16 +10993,26 @@ textarea.form-control-lg {
   position: absolute;
   left: 25px;
   line-height: 25px;
-  font-size: 14px;
+  font-size: 1rem;
   width: 900px;
+}
+
+#site-three #pnbbio:nth-of-type(1) {
+  top: 400px;
+}
+
+#site-three #pnbbio:nth-of-type(2) {
+  top: 545px;
+}
+
+#site-three #pnbbio:nth-of-type(3) {
+  top: 690px;
 }
 
 #site-three #biobuttonbg {
   position: absolute;
   top: 800px;
   left: 25px;
-  height: 43px;
-  width: 258px;
   background-color: #212829;
 }
 
@@ -10962,14 +11024,14 @@ textarea.form-control-lg {
   text-decoration: none;
   color: #cfd9d6;
   font-weight: 400;
-  width: 198px;
-  font-size: 16pt;
-  padding: 10.5px 29.5px;
+  margin: 0;
+  font-size: 1.3rem;
+  padding: 12px 32px;
 }
 
 #site-three #moreinfosect {
   height: 465px;
-  width: 971px;
+  width: 55%;
   background-color: #cfd9d6;
 }
 
@@ -11000,8 +11062,7 @@ textarea.form-control-lg {
   position: absolute;
   top: 300px;
   left: 45px;
-  height: 43px;
-  width: 258px;
+  padding: 0 50px;
   background-color: #212829;
 }
 
@@ -11016,7 +11077,8 @@ textarea.form-control-lg {
   font-weight: 400;
   width: 198px;
   font-size: 16pt;
-  padding: 10.5px 29.5px;
+  padding: 15px 30px;
+  margin: 0;
 }
 
 #site-three #mish {
@@ -11035,35 +11097,30 @@ textarea.form-control-lg {
 }
 
 #site-three #contactinfo {
-  height: 700px;
-  width: 1903px;
+  height: fit-content;
+  width: 100%;
   background-color: #212829;
-  position: absolute;
-  top: 121px;
   color: #cfd9d6;
+  padding-bottom: 74px;
 }
 
 #site-three #contactheader {
-  font-size: 45pt;
+  font-size: 3.5rem;
   font-weight: 400;
-  width: 216px;
-  margin: 0px 843px;
-  margin-top: 150px;
+  text-align: center;
+  padding-top: 150px;
 }
 
 #site-three #contactname {
-  font-size: 30pt;
+  font-size: 2.5rem;
   font-weight: 400;
-  width: 302px;
-  margin: 0px 800px;
+  text-align: center;
   margin-top: 60px;
 }
 
 #site-three #contactteleemail {
-  font-size: 20pt;
+  font-size: 1.75rem;
   font-weight: 400;
-  width: 350px;
-  margin: 0px 776px;
   margin-top: 60px;
   text-align: center;
 }
@@ -11071,13 +11128,12 @@ textarea.form-control-lg {
 #site-three #tablesect {
   position: relative;
   padding: 50px 0px;
-  top: 115px;
+  height: fit-content;
 }
 
 #site-three #otherworktable {
   align-content: center;
-  position: relative;
-  left: 410px;
+  margin: auto;
 }
 
 #site-three #titlerow {
@@ -11098,7 +11154,7 @@ textarea.form-control-lg {
 
 #site-three #bp02 {
   width: 300px;
-  height: 146px;
+  height: 100%;
   margin: 25px 25px;
 }
 
@@ -11110,7 +11166,7 @@ textarea.form-control-lg {
 #site-three #termsheader {
   background-color: #f2f2f2;
   min-height: 2500px;
-  width: 1903px;
+  width: 100%;
   height: 304.16px;
   display: block;
   top: 800px;
@@ -11147,101 +11203,81 @@ textarea.form-control-lg {
   line-height: 25px;
 }
 
-#site-three #aboutheading {
-  width: 1413.48px;
-  position: relative;
-  top: 115px;
-  color: #080a0a;
-  z-index: 1;
-  line-height: 25px;
-  left: 275px;
-  text-align: center;
-  font-weight: 100;
-  font-size: 50pt;
-}
-
 #site-three #insurp {
-  width: 1413.48px;
-  position: absolute;
-  top: 220px;
+  width: 100%;
   color: #080a0a;
-  z-index: 1;
-  line-height: 25px;
-  left: 275px;
   text-align: center;
   font-weight: 600;
-  font-size: 19pt;
+  font-size: 1.625rem;
+  padding-top: 50px;
 }
 
 #site-three #summary {
   width: 1413.48px;
-  position: absolute;
-  top: 275px;
   color: #080a0a;
-  z-index: 1;
-  line-height: 25px;
-  left: 275px;
   text-align: center;
+  margin: 25px auto 0;
+  padding-bottom: 25px;
+  font-size: 1.1rem;
 }
 
 #site-three #personalpic {
   border: none;
-  position: absolute;
-  top: 450px;
-  right: 120px;
+  position: relative;
   height: 1047.33px;
   width: 650px;
+  float: right;
+  margin-top: 100px;
+  margin-right: 120px;
 }
 
 #site-three #background {
-  position: absolute;
-  top: 450px;
-  left: 120px;
   background-color: #cfd9d6;
   height: 1047.33px;
-  width: 970.7px;
+  width: 55.5%;
+  float: left;
+  margin-top: 100px;
+  margin-left: 120px;
 }
 
 #site-three #interestingpic {
-  position: absolute;
-  top: 1535px;
-  left: 120px;
+  float: left;
   height: 650.22px;
   width: 650px;
+  margin-left: 120px;
+  margin-top: 35px;
 }
 
 #site-three #otherstuff {
-  position: absolute;
-  top: 1535px;
-  right: 120px;
+  float: right;
   background-color: #cfd9d6;
   height: 650.22px;
-  width: 970.7px;
+  width: 55.5%;
+  margin-right: 120px;
+  margin-top: 35px;
 }
 
 #site-three #insurp2 {
-  width: 1413.48px;
-  position: absolute;
-  top: 2310px;
   color: #080a0a;
-  z-index: 1;
   line-height: 25px;
-  left: 275px;
   text-align: center;
   font-weight: 600;
-  font-size: 19pt;
+  font-size: 1.8rem;
+  padding-top: 95%;
 }
 
 #site-three #list1 {
-  position: absolute;
-  top: 2390px;
-  left: 550px;
+  float: left;
+  margin-left: 40%;
+  margin-top: 25px;
+  font-size: 1.2rem;
 }
 
 #site-three #list2 {
-  position: absolute;
-  top: 2390px;
-  right: 650px;
+  float: right;
+  margin-right: 33%;
+  margin-top: 25px;
+  font-size: 1.2rem;
 }
 
 #site-three #aboutli {
@@ -11252,13 +11288,14 @@ textarea.form-control-lg {
   font-weight: bold;
   font-size: 15pt;
   padding-right: 10px;
+  display: none;
 }
 
 #site-three #backgroundheading {
   position: absolute;
   left: 45px;
   top: 290px;
-  font-size: 14pt;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 

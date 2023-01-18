@@ -43,6 +43,26 @@ app.get('/site-three', function(req, res) {
   res.render('site-three/home', {  });
 });
 
+app.get('/site-three/about', function(req, res) {
+  res.render('site-three/about', {  });
+});
+
+app.get('/site-three/contact', function(req, res) {
+  res.render('site-three/contact', {  });
+});
+
+app.get('/site-three/gallery', function(req, res) {
+  res.render('site-three/gallery', {  });
+});
+
+app.get('/site-three/terms-of-use', function(req, res) {
+  res.render('site-three/terms-of-use', {  });
+});
+
+app.get('/site-three/privacy-policy', function(req, res) {
+  res.render('site-three/privacy-policy', {  });
+});
+
 app.get('/game-one', function(req, res) {
   res.render('game-one', {  });
 });
