@@ -1,7 +1,7 @@
 
 
 function setup() {
-  let cnv = createCanvas(displayWidth, displayHeight);
+  let cnv = createCanvas(displayWidth, displayHeight, WEBGL);
   cnv.parent('header-canvas');
   // Create objects
   
@@ -9,5 +9,6 @@ function setup() {
 
 function draw() {
   background(18, 18, 18);
-  
+  translate(100,100,-100);
+  box();
 }
