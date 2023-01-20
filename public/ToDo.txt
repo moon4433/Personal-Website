@@ -1,6 +1,4 @@
-1. Fix navbar for contact section
-
-1.5. add link to other pages in navbar for games
+1. Fix navbar for contact section - ?? works on other computer ??
 
 3. Finish portfolio section
 
@@ -14,7 +12,7 @@
 8. Add google analytics
 9. Check SEO stuff
 
-10. Figure out php node issue
+10. Figure out php node issue - ?? fixed ??
 
 11. Make sure everything still works
 12. upload to website!

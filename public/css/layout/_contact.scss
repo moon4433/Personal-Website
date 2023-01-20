@@ -49,6 +49,8 @@
       & textarea{
          height: 200px;
          resize: none;
+         border-style: inset;
+         border-width: 2px;
       }
       & #confirmbutton{
          width: 150px;
