@@ -1,20 +1,5 @@
 <%- include('partials/header') -%>
-    <nav id="non-sticky" class="nav">
-        <ul class="nav__menu">
-            <li id="home-static" class="nav__menu-item --active">
-                <a class="nav__link" href="/#">HOME</a>
-            </li>
-            <li id="about-static" class="nav__menu-item">
-                <a class="nav__link" href="/#about">ABOUT</a>
-            </li>
-            <li id="portfolio-static" class="nav__menu-item">
-                <a class="nav__link" href="/#portfolio">PORTFOLIO</a>
-            </li>
-            <li id="contact-static" class="nav__menu-item">
-                <a class="nav__link" href="/#contact">CONTACT</a>
-            </li>
-        </ul>
-    </nav>
+<%- include('partials/game-nav') -%>
     <section class="game-one">   
         <h2 class="game-one__title" >Moon Survival</h2>
 
@@ -69,5 +54,6 @@
     <!-- Game One Scripts -->
     <script src="js/phaser.js"></script>
     <script src="js/game1.js"></script>
+    <script type="text/javascript" src="js/game-nav.js"></script>
 
 <%- include('partials/footer') -%>

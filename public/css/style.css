@@ -328,6 +328,11 @@ template {
 body {
   margin: 0;
 }
+@media print {
+  body {
+    display: none;
+  }
+}
 
 #website-wrapper {
   background-color: #F5F5F5;
