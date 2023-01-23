@@ -1,7 +1,9 @@
-let boidRadius = 20;
-let foodRadius = 20;
+let boidCount = 250;
+let foodCount = 1;
+
+let boidRadius = 10;
+let foodRadius = 3;
 let repelRadius = 25;
-let isAlive = new Boolean(false);
 
 let boids = [];
 let foods = [];
@@ -12,26 +14,50 @@ let other;
 
 let cam;
 
+let boidColor;
+
 function setup() {
   let cnv = createCanvas(windowWidth, windowHeight, WEBGL);
   cnv.parent('header-canvas');
+  pixelDensity(1);
+  frameRate(30);
   // Create objects
   cam = createCamera();
-  for(let b = 0; b < 10; b++){
+  boidColor = createVector(240, 84, 84);
+  for(let b = 0; b <= boidCount; b++){
     boids.push(new Boid());
+  }
+  for(let f = 1; f <= foodCount; f++){
+    foods.push(new Food());
   }
 }
 
 function draw() {
   background(18, 18, 18);
-  cam.setPosition(0,0, 2000);
-  // noStroke();
-  // sphere(50);
+  cam.setPosition(0,0,2000);
   for(let b = boids.length-1; b >= 0; b--){
-    boids[b].display();
     boids[b].move();
+    boids[b].display();
   }
-  // console.log(boids);
+  for(let f = foods.length-1; f >= 0; f--){
+    if(foods[f].isAlive === true){
+      foods[f].move();
+      foods[f].display();
+    }
+    else{
+      foods[f].isAlive = true;
+      foods[f].location.set(random(0 - (windowWidth + 165), windowWidth + 300), random(0 - (windowHeight + 165), windowHeight + 165),random(-50,50));
+      foods[f].acceleration.set(random(-1,1),random(-1,1),random(-1,1));
+    }
+    for(let b = boids.length-1; b >= 0; b--){
+      let tempPosition = p5.Vector.sub(boids[b].position, foods[f].position);
+      let distanceFromFoodToBoid = sqrt((tempPosition.x * tempPosition.x) + (tempPosition.y * tempPosition.y) + (tempPosition.z * tempPosition.z));
+      if(distanceFromFoodToBoid < boids[b].radius + foods[f].radius){
+        foods[f].isAlive = false;
+      }
+    }
+  }
+
 }
 
 class Boid {
@@ -46,11 +72,11 @@ class Boid {
     this.offsetRotationSpeed = random(-.1,.1);
     this.mass = random(100, 200);
     this.angle = 0;
-    this.maxforce = .4;
+    this.maxforce = .8;
     this.radius = boidRadius;
   }
   move(){
-    this.checkEdges();
+    // this.checkEdges();
     this.separate();
     this.steering();
   }
@@ -62,43 +88,41 @@ class Boid {
       rotateZ(this.angle);
       rectMode(CENTER);
       noStroke();
-      fill(240, 84, 84);
+      fill(boidColor.x,boidColor.y,boidColor.z);
       sphere(this.radius);
     pop();
   }
   separate(){
-    // this.desiredSeparation = 22*2;
-    // this.sum = createVector();
-    // this.count = 0;
-    // this.distance = createVector();
-    // for(let x = boids.length-1; x >= 0; x--){
-      // this.other = boids[x];
-      // this.distance.dist(this.position.x, this.other.position.x, this.position.y, this.other.position.y, this.position.z, this.other.position.z);
-      // if((d > 0) && (d <= this.desiredSeparation)){
-        // this.diff = createVector().sub(this.position, this.other.position);
-        // this.diff.normalize();
-        // this.diff.div(d);
-        // this.sum.add(diff);
-        // this.count++;
-      // }
-    // }
-    // if(this.count > 0){
-      // this.sum.div(this.count);
-      // this.sum.normalize();
-      // this.sum.mult(this.MAX_SPEED/.07);
-      // this.avoid = createVector();
-      // this.avoid.sub(this.sum,this.velocity);
-      // this.avoid.limit(this.maxforce);
-      // this.avoid.mult(10);
-      // this.position.add(this.avoid);
-    // }
+    this.desiredSeparation = (this.radius * 2);
+    this.sum = createVector();
+    this.count = 0;
+    for(let x = boids.length-1; x >= 0; x--){
+      this.distance = dist(this.position.x, this.position.y, this.position.z, boids[x].position.x, boids[x].position.y, boids[x].position.z);
+      if((this.distance > 0) && (this.distance <= this.desiredSeparation)){
+        this.diff = p5.Vector.sub(this.position, boids[x].position);
+        this.diff.normalize();
+        this.diff.div(this.distance);
+        this.sum.add(this.diff);
+        this.count++;
+      }
+    }
+    if(this.count > 0){
+      this.sum.div(this.count);
+      this.sum.normalize();
+      this.sum.mult(this.MAX_SPEED/.07);
+      this.avoid = p5.Vector.sub(this.sum,this.velocity);
+      this.avoid.limit(this.maxforce);
+      this.avoid.mult(2);
+      this.position.add(this.avoid);
+    }
   }
   steering(){
-    this.target.x = mouseX;
-    this.target.y = mouseY;
-    // this.target.z
-    this.vectorToTarget = createVector();
-    this.vectorToTarget.sub(this.target, this.position);
+
+    for(let f = foods.length-1; f >= 0; f--){
+      this.target = foods[f].position;
+    }
+
+    this.vectorToTarget = p5.Vector.sub(this.target, this.position);
     this.vectorToTarget.limit(this.MAX_SPEED);
     this.boidSteerForce = p5.Vector.sub(this.vectorToTarget,this.velocity);
     
@@ -111,11 +135,11 @@ class Boid {
     this.angle = this.velocity.heading();
   }
   checkEdges(){
-    if(this.position.x > windowWidth + 265){
-      this.position.x = 0;
+    if(this.position.x > windowWidth + 300){
+      this.position.x = 0 - (windowWidth + 300);
     }
-    else if(this.position.x < 0 - (windowWidth + 265)){
-      this.position.x = windowWidth + 265;
+    else if(this.position.x < 0 - (windowWidth + 300)){
+      this.position.x = windowWidth + 300;
     }
     if(this.position.y > windowHeight + 165){
       this.position.y = 0;
@@ -123,8 +147,74 @@ class Boid {
     else if(this.position.y < 0 - (windowHeight + 165)){
       this.position.y = windowHeight + 165;
     }
+    if(this.position.z >= 500){
+      this.position.z = -500;
+    }
+    else if(this.position.z <= -500){
+      this.position.z = 500;
+    }
   }
-  flock(boidArray){
+  flock(){
 
   }
+  mouseOver(){
+    boidColor.set(48, 71, 94);
+  }
+  mouseOut(){
+    boidColor.set(240, 84, 84);
+  }
+}
+
+class Food {
+  constructor(){
+    this.position = createVector();
+    this.location = createVector();
+    this.velocity = createVector(0,0,0);
+    this.acceleration = createVector();
+    this.radius = foodRadius;
+    this.isAlive = new Boolean(false);
+  }
+  move(){
+    this.checkEdges();
+    this.steering();
+  }
+  display(){
+    push();
+    noStroke();
+    fill(245);
+    translate(this.location);
+    sphere(this.radius);
+    pop();
+  }
+  steering(){
+    this.velocity.add(this.acceleration);
+    this.velocity.limit(.9);
+    this.location.add(this.velocity);
+    
+    this.position.set(this.location);
+  }
+  checkEdges(){
+    if(this.location.x >= windowWidth + 300){
+      this.location.x = 0 - (windowWidth + 300);
+    }
+    else if(this.location.x <= 0 - (windowWidth + 300)){
+      this.location.x = windowWidth + 300;
+    }
+    if(this.location.y >= windowHeight + 165){
+      this.location.y = 0;
+    }
+    else if(this.location.y <= 0 - (windowHeight + 165)){
+      this.location.y = windowHeight + 165;
+    }
+    if(this.location.z >= 400){
+      this.location.z = -400;
+    }
+    else if(this.location.z <= -400){
+      this.location.z = 400;
+    }
+  }
+}
+
+class Obstacle {
+  
 }

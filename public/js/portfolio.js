@@ -3,6 +3,23 @@ let menuOptions = document.querySelectorAll('#portfolio-menu .portfolio__menu-it
 let workOptions = document.querySelectorAll('#portfolio-work-menu .work');
 let timeout = 0;
 
+workOptions.forEach((work)=>{
+    let workImage = work.querySelector('.work__container .work__img');
+    work.style.width = workImage.offsetWidth + 'px';
+    work.addEventListener('mouseenter', (event)=>{
+        work.querySelector('.work__overlay').classList.add('hovered');
+        work.querySelector('.work__title').classList.add('visible');
+        work.querySelector('.work__desc').classList.add('visible');
+        work.querySelector('.work__button').classList.add('visible');
+    });
+    work.addEventListener('mouseleave', (event)=>{
+        work.querySelector('.work__overlay').classList.remove('hovered');
+        work.querySelector('.work__title').classList.remove('visible');
+        work.querySelector('.work__desc').classList.remove('visible');
+        work.querySelector('.work__button').classList.remove('visible');
+    });
+});
+
 window.addEventListener('resize', ()=>{
     menuOptions.forEach((item) => {
         if(item.classList.contains('active')){
@@ -54,17 +71,18 @@ menuOptions.forEach((option) => {
             }
         });
         workOptions.forEach((selectedItems)=>{
+            let currentImage = selectedItems.querySelector('.work__container .work__img');
             if(currentShow === 'all'){ 
                 selectedItems.style.display = 'block'
                 setTimeout(()=>{
-                    selectedItems.style.width = 25 + '%';
+                    selectedItems.style.width = currentImage.offsetWidth + 'px';
                     setTimeout(()=>{
                         selectedItems.querySelector('.work__container').style.scale = 100 + '%';
                     },800);
                 },100);
             }
             else if(!selectedItems.classList.contains(currentShow)){
-                selectedItems.querySelector('.work__container').style.scale = 0 + '%';
+                selectedItems.querySelector('.work__container').style.scale = 0 + 'px';
                 setTimeout(()=>{
                     selectedItems.style.width = 0 + '%';
                     setTimeout(()=>{
@@ -76,18 +94,5 @@ menuOptions.forEach((option) => {
     });
 });
 
-workOptions.forEach((work)=>{
-    work.addEventListener('mouseenter', (event)=>{
-        work.querySelector('.work__overlay').classList.add('hovered');
-        work.querySelector('.work__title').classList.add('visible');
-        work.querySelector('.work__desc').classList.add('visible');
-        work.querySelector('.work__button').classList.add('visible');
-    });
-    work.addEventListener('mouseleave', (event)=>{
-        work.querySelector('.work__overlay').classList.remove('hovered');
-        work.querySelector('.work__title').classList.remove('visible');
-        work.querySelector('.work__desc').classList.remove('visible');
-        work.querySelector('.work__button').classList.remove('visible');
-    });
-});
+
 
