@@ -268,7 +268,7 @@
       <p class="contact__text">
         Have a question or want to work together?
       </p>
-      <form id="contact-form" class="contact__form">
+      <form id="contact-form" class="contact__form" method="POST" action="send" enctype="multipart/form-data">
         <div class="contact__form-row">
           <input placeholder="Name" type="text" name="name" id="name" required>
         </div>
@@ -279,7 +279,8 @@
             <textarea placeholder="Your Message" name="message" id="message"></textarea>
         </div>
         <div class="contact__form-row">
-            <input type="submit" id="confirmbutton" value="Send Form">
+            <input type="submit" id="confirmbutton" name="confirm" value="submit
+            ">
         </div>
       </form>
     </div>
