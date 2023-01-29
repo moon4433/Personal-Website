@@ -1,9 +1,9 @@
-
 3. Finish portfolio section
 
 4. Finish header
 
-5. Get form working - https://lo-victoria.com/how-to-build-a-contact-form-with-javascript-and-nodemailer
+5.5. Find way to hide or encrypt keys on app.js file
+5.6. add recaptcha to form
 
 6. Implament Animation
 7. Implament responsiveness

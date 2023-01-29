@@ -110,3 +110,4 @@ window.addEventListener('load', (event)=>{
         movingNav.classList.remove('active');
     }
 });
+

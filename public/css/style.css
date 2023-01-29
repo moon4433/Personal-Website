@@ -10446,6 +10446,7 @@ textarea.form-control-lg {
   left: 0;
   height: 100%;
   width: 0;
+  border-radius: 5px;
 }
 .portfolio__menu-item {
   font-size: 1.4rem;
@@ -10529,7 +10530,7 @@ textarea.form-control-lg {
   height: fit-content;
   padding: 0;
   font-size: 1.2rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
   margin-bottom: 0;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
