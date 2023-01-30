@@ -1,0 +1,66 @@
+<% if (page === 'home') { %>
+    <nav id="non-sticky" class="nav">
+        <ul class="nav__menu">
+            <li id="home-static" class="nav__menu-item --active">
+                <a class="nav__link" href="#">HOME</a>
+            </li>
+            <li id="about-static" class="nav__menu-item">
+                <a class="nav__link" href="#about">ABOUT</a>
+            </li>
+            <li id="portfolio-static" class="nav__menu-item">
+                <a class="nav__link" href="#portfolio">PORTFOLIO</a>
+            </li>
+            <li id="contact-static" class="nav__menu-item">
+                <a class="nav__link" href="#contact">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+    <nav id="sticky" class="nav">
+        <ul class="nav__menu">
+            <li id="home-sticky" class="nav__menu-item --active">
+                <a class="nav__link" href="#">HOME</a>
+            </li>
+            <li id="about-sticky" class="nav__menu-item">
+                <a class="nav__link" href="#about">ABOUT</a>
+            </li>
+            <li id="portfolio-sticky" class="nav__menu-item">
+                <a class="nav__link" href="#portfolio">PORTFOLIO</a>
+            </li>
+            <li id="contact-sticky" class="nav__menu-item">
+                <a class="nav__link" href="#contact">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+<% } else {%>
+    <nav id="game" class="nav">
+        <ul class="nav__menu">
+            <li id="home-game" class="nav__menu-item">
+                <a class="nav__link" href="/#">HOME</a>
+            </li>
+            <li id="about-game" class="nav__menu-item">
+                <a class="nav__link" href="/#about">ABOUT</a>
+            </li>
+            <li id="portfolio-game" class="nav__menu-item">
+                <a class="nav__link" href="/#portfolio">PORTFOLIO</a>
+            </li>
+            <li id="contact-game" class="nav__menu-item">
+                <a class="nav__link" href="/#contact">CONTACT</a>
+            </li>
+            <li id="projects-game" class="nav__menu-item --active">
+                <a id="projects-button" class="nav__link">PROJECTS</a>
+                <div id="projects-dropdown" class="dropdown">
+                  <div class="dropdown__container">
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item"><a class="dropdown__link" href="/site-one">SITE 1</a></li>
+                      <li class="dropdown__list-item"><a class="dropdown__link" href="/site-two">SITE 2</a></li>
+                      <li class="dropdown__list-item"><a class="dropdown__link" href="/site-three">SITE 3</a></li>
+                      <li class="dropdown__list-item"><a class="dropdown__link" href="/game-one">GAME 1</a></li>
+                      <li class="dropdown__list-item"><a class="dropdown__link" href="/game-two">GAME 2</a></li>
+                      <li class="dropdown__list-item"><a class="dropdown__link" href="/game-three">GAME 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+<% } %>

@@ -1,17 +1,14 @@
-3. Finish portfolio section
+1. Finish portfolio section
 
-4. Finish header
+5. Implament Animation
+6. Implament responsiveness
 
-5.5. Find way to hide or encrypt keys on app.js file
-5.6. add recaptcha to form
+11. upload to website!
 
-6. Implament Animation
-7. Implament responsiveness
+7. Figure out php node issue - ?? fixed ??
 
+4. add recaptcha to form
 8. Add google analytics
 9. Check SEO stuff
 
-10. Figure out php node issue - ?? fixed ??
-
-11. Make sure everything still works
-12. upload to website!
+10. Make sure everything still works

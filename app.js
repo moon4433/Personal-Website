@@ -10,7 +10,8 @@ const bodyParser = require('body-parser');
 const ejs = require("ejs");
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
-const OAuth2 = google.auth.OAuth2
+const OAuth2 = google.auth.OAuth2;
+require('dotenv').config({ path: './site.env' });
 
 const app = express();
 
@@ -23,14 +24,14 @@ app.use(bodyParser.urlencoded({
 }));
 
 const oauth2Client = new OAuth2(
-'260393057932-eprfaf865lq469jjiaajht0382cgk2lo.apps.googleusercontent.com',
-'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',
-"https://developers.google.com/oauthplayground");
-oauth2Client.setCredentials({refresh_token:'1//04iGjolFX7Mq3CgYIARAAGAQSNgF-L9IrL18uG2bZvIqlnb-tgQtmvmkjEeMvxB9xGy0KdZ0o6QMUfQVL_TbMT3ihJnzvuCWUOA'});
+process.env.EMAIL_ID,
+process.env.EMAIL_SECRET,
+process.env.EMAIL_AUTH_LOCATION);
+oauth2Client.setCredentials({refresh_token:process.env.EMAIL_REFRESH_TOKEN});
 const accessToken = oauth2Client.getAccessToken();
 
 app.get('/', function(req, res) {
-  res.render('home', {  });
+  res.render('home', { page: 'home' });
 });
 
 app.get('/site-one', function(req, res) {
@@ -78,15 +79,15 @@ app.get('/site-three/privacy-policy', function(req, res) {
 });
 
 app.get('/game-one', function(req, res) {
-  res.render('game-one', {  });
+  res.render('game-one', { page: 'game1' });
 });
 
 app.get('/game-two', function(req, res) {
-  res.render('game-two', {  });
+  res.render('game-two', { page: 'game2' });
 });
 
 app.get('/game-three', function(req, res) {
-  res.render('game-three', {  });
+  res.render('game-three', { page: 'game3' });
 });
   
 app.post('/', function(req,res) {
@@ -108,17 +109,17 @@ app.post('/', function(req,res) {
     secure: true,
     auth:{
     type:"OAuth2",
-    user:'formemailkeeganrjohnson@gmail.com',
-    pass: '1Q39cvb0',
-    clientId:'260393057932-eprfaf865lq469jjiaajht0382cgk2lo.apps.googleusercontent.com',
-    clientSecret:'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',
-    refreshToken:'1//04iGjolFX7Mq3CgYIARAAGAQSNgF-L9IrL18uG2bZvIqlnb-tgQtmvmkjEeMvxB9xGy0KdZ0o6QMUfQVL_TbMT3ihJnzvuCWUOA',
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+    clientId: process.env.EMAIL_ID,
+    clientSecret: process.env.EMAIL_SECRET,
+    refreshToken: process.env.EMAIL_REFRESH_TOKEN,
     accessToken:accessToken
     }});
 
     const mailOpts = {
-      from:'formemailkeeganrjohnson@gmail.com',
-      to:'keeganjohnson43@gmail.com',
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_RECIPIENT,
       subject:'New Contact Request',
       html:output
     };
