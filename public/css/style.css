@@ -10428,6 +10428,11 @@ textarea.form-control-lg {
   width: 75%;
   margin: 50px auto 0;
 }
+@media screen and (max-width: 1024px) {
+  .portfolio__work-container {
+    width: 90%;
+  }
+}
 .portfolio__menu {
   display: flex;
   list-style: none;
@@ -10476,6 +10481,7 @@ textarea.form-control-lg {
   background-color: #30475E;
   padding-bottom: 155px;
   overflow: hidden;
+  padding-top: 75px;
 }
 .contact__top {
   width: 100%;

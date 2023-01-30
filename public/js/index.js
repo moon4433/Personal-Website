@@ -79,7 +79,7 @@ window.addEventListener('scroll', (event)=>{
             }
         });
     }
-    if(window.scrollY > aboutSection.offsetTop && window.scrollY > portfolioSection.offsetTop && window.scrollY >= (contactSection.offsetTop - 5)){
+    if(window.scrollY > aboutSection.offsetTop && window.scrollY > portfolioSection.offsetTop && window.scrollY >= (contactSection.offsetTop - 1)){
         stickyMenu.forEach((stickyitem) => {
             if(stickyitem.classList.contains('--active')){
                 stickyitem.classList.remove('--active');

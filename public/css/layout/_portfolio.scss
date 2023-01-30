@@ -11,6 +11,9 @@
       background-color: #fff;
       width: 75%;
       margin: 50px auto 0;
+      @include breakMax(1024px){
+         width: 90%;
+      }
    }
    &__menu{
       display: flex;

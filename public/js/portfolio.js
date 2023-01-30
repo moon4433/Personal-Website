@@ -72,23 +72,14 @@ menuOptions.forEach((option) => {
         });
         workOptions.forEach((selectedItems)=>{
             let currentImage = selectedItems.querySelector('.work__container .work__img');
-            if(currentShow === 'all'){ 
-                selectedItems.style.display = 'block'
-                setTimeout(()=>{
-                    selectedItems.style.width = currentImage.offsetWidth + 'px';
-                    setTimeout(()=>{
-                        selectedItems.querySelector('.work__container').style.scale = 100 + '%';
-                    },800);
-                },100);
+            if(currentShow === 'all'){
+                console.log('all');
+            }
+            else if(currentShow !== 'all' && selectedItems.classList.contains(currentShow)){ 
+                console.log(currentShow);
             }
             else if(!selectedItems.classList.contains(currentShow)){
-                selectedItems.querySelector('.work__container').style.scale = 0 + 'px';
-                setTimeout(()=>{
-                    selectedItems.style.width = 0 + '%';
-                    setTimeout(()=>{
-                        selectedItems.style.display = 'none'; 
-                    },800);
-                },500);
+                console.log('Stuff not to show...')
             }
         });
     });

@@ -1,14 +1,11 @@
-1. Finish portfolio section
+3. Implament responsiveness
 
-5. Implament Animation
-6. Implament responsiveness
+4. upload to website!
 
-11. upload to website!
+5. Figure out php node issue - ?? fixed ??
 
-7. Figure out php node issue - ?? fixed ??
+6. add recaptcha to form
+7. Add google analytics
+8. Check SEO stuff
 
-4. add recaptcha to form
-8. Add google analytics
-9. Check SEO stuff
-
-10. Make sure everything still works
+9. Make sure everything still works
