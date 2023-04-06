@@ -76,7 +76,7 @@ menuOptions.forEach((option) => {
                 console.log('all');
             }
             else if(currentShow !== 'all' && selectedItems.classList.contains(currentShow)){ 
-                console.log(currentShow);
+                console.log(currentShow); 
             }
             else if(!selectedItems.classList.contains(currentShow)){
                 console.log('Stuff not to show...')

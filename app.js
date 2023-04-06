@@ -1,9 +1,4 @@
-//jshint esversion:6
-/*
-client id: 260393057932-eprfaf865lq469jjiaajht0382cgk2lo.apps.googleusercontent.com
-client secret: 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
-Refresh token: 1//04iGjolFX7Mq3CgYIARAAGAQSNgF-L9IrL18uG2bZvIqlnb-tgQtmvmkjEeMvxB9xGy0KdZ0o6QMUfQVL_TbMT3ihJnzvuCWUOA
-*/
+
 const express = require('express');
 const https = require('https');
 const bodyParser = require('body-parser');
@@ -135,6 +130,7 @@ app.post('/', function(req,res) {
         });
 });
 
-app.listen(process.env.PORT || 3000, function() {
-  console.log('Server is listening on port 3000...');
+const server = app.listen(process.env.PORT || 3000, () => {
+  const port = server.address().port;
+  console.log(`Express is working on port ${port}`);
 });

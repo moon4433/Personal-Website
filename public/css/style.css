@@ -11853,11 +11853,9 @@ textarea.form-control-lg {
   height: 250px;
   overflow: hidden;
   position: relative;
-  transition: width 0.8s;
 }
 .work__container {
   scale: 100%;
-  transition: scale 0.5s;
   height: 100%;
   width: fit-content;
   position: absolute;

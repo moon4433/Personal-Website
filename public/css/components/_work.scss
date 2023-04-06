@@ -6,10 +6,8 @@
     height: 250px;
     overflow: hidden;
     position: relative;
-    transition: width .8s;
     &__container{
       scale: 100%;
-      transition: scale .5s;
       height: 100%;
       width: fit-content;
       position: absolute;
