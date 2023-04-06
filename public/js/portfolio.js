@@ -60,7 +60,7 @@ menuOptions.forEach((option) => {
     });
 
     option.addEventListener('click',(event)=>{
-        let currentShow = '';
+        let currentShow = 'all';
         menuOptions.forEach((selection)=>{
             if(selection.classList.contains('active')){
                 selection.classList.remove('active');
